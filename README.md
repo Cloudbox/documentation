@@ -1,4 +1,2 @@
-# Introduction
-
-001
+# Initial page
 
