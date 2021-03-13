@@ -14,3 +14,21 @@ Do stuff relevant to use case 2.
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+Some hint
+{% endhint %}
+
+{% hint style="warning" %}
+Some warning
+{% endhint %}
+
+{% hint style="danger" %}
+Stranger Danger
+{% endhint %}
+
+{% hint style="success" %}
+Success!
+{% endhint %}
+
+
+
