@@ -30,5 +30,34 @@ Stranger Danger
 Success!
 {% endhint %}
 
+> Some quote
 
+```yaml
+---
+user:
+  name: seed
+  pass: password123
+  domain: testcloudbox.ml
+  email: your@email.com
+cloudflare:
+  email:
+  api:
+plex:
+  user:
+  pass:
+pushover:
+  app_token:
+  user_key:
+  priority:
+apprise:
+
+```
+
+{% page-ref page="./" %}
+
+$$
+a = b
+$$
+
+{% file src=".gitbook/assets/empty.txt" caption="Some file" %}
 
