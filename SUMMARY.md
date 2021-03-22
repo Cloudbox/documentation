@@ -4,17 +4,15 @@
 * [FAQ](faq.md)
 * [Untitled](untitled.md)
 
-## [[Home]] ##
 
-
-## Basics ##
+## Basics
 1. [[Introduction|Basics: Introduction]]
 1. [[Cloudbox Install Types|Basics: Cloudbox Install Types]]
 1. [[Cloudbox Paths|Basics: Cloudbox Paths]]
 1. [[Accessing Cloudbox Apps|Basics: Accessing Cloudbox Apps]]
 
 
-## Prerequisites ##
+## Prerequisites
 1. [[Overview|Prerequisites: Overview]]
 1. [[Presumptions|Prerequisites: Presumptions]]
 1. [[Server|Prerequisites: Server]]
@@ -24,11 +22,7 @@
 1. [[Plex|Prerequisites: Plex]] / [[Emby|Prerequisites: Emby]] - Account
 1. [[Usenet vs. BitTorrent|Prerequisites: Usenet vs BitTorrent]]
 
-
-## Install Cloudbox ##
-
-
-<details open><summary><strong>Cloudbox</strong></summary>
+## Install Cloudbox
 
 1. [[Overview|Install: Overview]]
 1. [[Dependencies|Install: Dependencies]] (Choose only one of these)
@@ -60,14 +54,8 @@
     1. [[Ombi|Install: Ombi]]
     1. [[Portainer|Install: Portainer]]
     1. [[Organizr|Install: Organizr]]
-</details>
 
-<br />
-
-
-## Install Feederbox / Mediabox  ##
-
-<details open><summary><strong>Feederbox</strong> (do this first)</summary>
+## Install Feederbox / Mediabox
 
 1. [[Overview|Install: Overview]]
 1. [[Dependencies|Install: Dependencies]]
@@ -96,12 +84,6 @@
     1. [[Portainer|Install: Portainer]]
     1. [[Organizr|Install: Organizr]]
 
-</details>
-
-<br />
-
-<details open><summary><strong>Mediabox</strong></summary>
-
 1. [[Overview|Install: Overview]]
 1. [[Dependencies|Install: Dependencies]]
    - [[Master Branch (default)|Install: Dependencies (Master Branch)]]
@@ -125,14 +107,8 @@
     1. [[PlexPy (Tautulli)|Install: PlexPy (Tautulli)]]
     1. [[Ombi|Install: Ombi]]
 
-</details>
 
-
-
-
-
-
-## Recommended Reading ##
+## Recommended Reading
 - [[Cloudplow]] (Media Uploader)
 - [[cb utility script|cb utility script]] (Develop branch only}
 - [[Updating Cloudbox]] (Choose only one of these)
@@ -144,7 +120,7 @@
 - [[Settings Updater]]
 
 
-## Backup and Restore  ##
+## Backup and Restore
 - [[ Backup and Restore | Cloudbox Backup and Restore]]
 - [[ Settings | Cloudbox Backup and Restore Settings]]
 - [[ Scheduling | Cloudbox Backup and Restore Scheduling]]
@@ -153,7 +129,7 @@
   - [[What is backed up? | https://github.com/Cloudbox/Cloudbox/wiki/FAQ#what-is-backed-up]]
   - [[What is Cloudbox Restore Service? | https://github.com/Cloudbox/Cloudbox/wiki/FAQ#what-is-cloudbox-restore-service]]
 
-## More Information ##
+## More Information
 - [[Ansible Vault Primer]]
 - [[Plex Access Token]]
 - [[Plex Autoscan Extras]]
@@ -166,14 +142,14 @@
 - [[Adding a Subdomain|Adding a Subdomain]]
 - [[HTTP Auth Support|HTTP Auth Support]]
 
-## Advanced Configuration ##
+## Advanced Configuration
 - [[Customizing Plex Libraries]]
 - [[adv_settings.yml|adv_settings.yml]]
 
-## Experimental ##
+## Experimental
 - [[Downloading into the unionfs mount]]
 
-## Extras ##
+## Extras
 - [[Emby|Extras: Emby]]
 - [[Nextcloud|Extras: Nextcloud]]
 - [[Resilio Sync|Extras: Resilio Sync]]
@@ -185,13 +161,13 @@
 - [[SABnzbd|Extras: SABnzbd]]
 - [[Traktarr|Extras: Traktarr]]
 
-## Misc ##
+## Misc
 - [[Nativefier]]
 
-## Community-Submitted ##
+## Community-Submitted
 See [[Community Wiki|https://github.com/Cloudbox/Community/wiki]].
 
-## Reference ##
+## Reference
 - [[Cloudbox Paths|Reference: Cloudbox Paths]]
 - [[Cloudbox Ansible Tags|Reference: Cloudbox Ansible Tags]]
 - [[Cloudbox Tools|Reference: Cloudbox Tools]] (work in progress)
@@ -199,14 +175,14 @@ See [[Community Wiki|https://github.com/Cloudbox/Community/wiki]].
 - [[Cloudbox Config Files|Reference: Cloudbox Config Files]]
 - [[Cloudbox Settings|Reference: Cloudbox Settings]]
 
-## Troubleshooting ##
+## Troubleshooting
 - [[FAQ]]
 - [[FAQ - Archived]]
 - [[502 errors]]
 - [[Logs]]
 - [[Low Disk Space]]
 
-## Links ##
+## Links
 - [Website](https://cloudbox.works)
 - [Community Repo](https://github.com/Cloudbox/Community)
 - [Discord](https://discord.io/cloudbox)
