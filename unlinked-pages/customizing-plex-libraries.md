@@ -1,0 +1,323 @@
+# Customizing-Plex-Libraries.md
+
+* [Intro](customizing-plex-libraries.md#intro)
+* [Scenario 1](customizing-plex-libraries.md#scenario-1) \(recommended\)
+* [Scenario 2](customizing-plex-libraries.md#scenario-2)
+
+## Intro
+
+### Basics
+
+In the default Cloudbox install, there only two main Plex libraries: one for Movies and one for TV Shows.
+
+The idea being that all movies are to be placed within the `/Media/Movies` folder in Google Drive. and all TV shows under `/Media/TV`.
+
+Default Paths:
+
+```text
+   Media
+   ├── Movies
+   ├── Music
+   └── TV
+```
+
+![](https://i.imgur.com/kwnNjni.png)
+
+If you would like to have custom libraries in Plex, you may do so with this guide.
+
+But regardless of whatever scenario you choose below, the media folders will ALWAYS be located within the `Media` folder \(`/Media/` on Google Drive and `/mnt/unionfs/Media/` on the server\).
+
+### Scenarios
+
+* Adding folders \(i.e. libraries\) directly under `Media/Movies/` \(or `Media/TV/`\) \(i.e. the standard paths\) → [Scenario 1](customizing-plex-libraries.md#scenario-1). This is the recommended option.
+* Adding folders \(i.e. libraries\) directly under `Media/` → [Scenario 2](customizing-plex-libraries.md#scenario-2).
+
+### Example
+
+Here is a simplified version of my library setup, which is based on [Scenario 1](customizing-plex-libraries.md#scenario-1).
+
+```text
+ Media
+ ├── Movies
+ │   ├── Movies
+ │   ├── Movies-4K
+ │   ├── Movies-Anime
+ │   └── Movies-Kids
+ ├── Music
+ └── TV
+     ├── TV
+     └── TV-4K
+```
+
+* The general location movies in this example is `/Movies/Movies`.
+
+  _Note: This can be called anything else, such as `/Movies/Movies-Main` or `/Movies/Movies-All`._
+
+* `/Movies/Movies-Kids/` folder is for family rated, animated films.
+* `/Movies/Movies-Anime/` folder is for Japanese, animated films.
+* Kids and Anime libraries are generated via \[\[Python-PlexLibrary\|[https://github.com/adamgot/python-plexlibrary](https://github.com/adamgot/python-plexlibrary)\]\] - a script that builds virtual libraries using symlinks that point to the main Movies library path.
+
+## Scenario 1
+
+Movie libraries under `/Media/Movies`.
+
+This setup is recommended over Scenario 2 as it is somewhat user-friendly and requires a lot less setup.
+
+_Note: You could do the same to TV shows \(i.e. have multiple sub-dirs within `TV`\), but this guide will not go over that. However, the steps are similar to the ones below._
+
+Example:
+
+```text
+Media
+├── Movies
+│   ├── Movies
+│   ├── Movies-4K
+│   ├── Movies-Anime
+│   ├── Movies-Foreign
+│   └── Movies-Kids
+├── Music
+└── TV
+```
+
+### 1. Create Folders in Google Drive
+
+Let's say you wanted to have separate movie libraries for:
+
+* General Movies
+* 4K Movies
+* Anime Movies
+* Foreign Movies
+* Movies for Kids
+
+You would first have to create these folders within the `/Media/Movies` path in Google Drive.
+
+However, the root folder of `/Media/Movies` will NOT contain anything but these folders.
+
+_Note: Remember, folders are case sensitive in Google Drive and in Linux \(e.g. `4K` and `4k` are 2 different folders\)._
+
+For our example, we will create the following folders in Google Drive:
+
+* `/Media/Movies/Movies`\*
+* `/Media/Movies/Movies-4K`
+* `/Media/Movies/Movies-Anime`
+* `/Media/Movies/Movies-Foreign`
+* `/Media/Movies/Movies-Kids`
+
+\*_Note: This can be called anything else, such as `/Media/Movies/Movies-Main` or `/Media/Movies/Movies-All`._
+
+Screenshots:
+
+![](https://i.imgur.com/kwnNjni.png)
+
+![](https://i.imgur.com/VG5zT7y.png)
+
+### 2. Add Libraries to Plex
+
+You will add each of these folders as separate libraries within Plex \(see \[\[example\|Install: Plex-Media-Server\#adding-the-movie-library\]\]\). You may name these libraries as whatever you want.
+
+The folders will be located under `/data/Movies` folder within Plex \(see \[\[Paths\|Basics: Cloudbox Paths\#plex\]\]\).
+
+In our example, this will be:
+
+* `/data/Movies/Movies`\*
+* `/data/Movies/Movies-4K`
+* `/data/Movies/Movies-Anime`
+* `/data/Movies/Movies-Foreign`
+* `/data/Movies/Movies-Kids`
+
+\*_Note: This can be called anything else, such as `/data/Movies-Main` or `/data/Movies-All`._
+
+### 3. Modify Cloudplow Config
+
+_Note 1: For Mediabox / Feederbox setups, this will be done on the Feederbox._
+
+_Note 2: This is the default setting and may be skipped if you haven't changed it before._
+
+1. On the server's shell, run the following command:
+
+   ```text
+    nano /opt/cloudplow/config.json
+   ```
+
+2. Set the following for `remove_empty_dir_depth`:
+
+   ```javascript
+   "remove_empty_dir_depth": 2,
+   ```
+
+3. Ctrl + X Y Enter to save.
+4. Restart Cloudplow: `sudo systemctl restart cloudplow`.
+
+### 4. Change Root Paths in Radarr
+
+Set your Movie Paths in \[\[Radarr\|Install: Radarr\#8-adding-the-movies-path\]\] to reflect the new sub-dirs \(e.g. `/movies/3D`\).
+
+### 6. Misc
+
+#### i. Change Root Paths in Plex Requests
+
+Set the default "Root save directory for movies" on the Radarr setup page of \[\[Plex Requests\|Extras: Plex-Requests\#3-settings"Root save directory for movies"\]\] \(e.g. `/movies/3D`\).
+
+## Scenario 2
+
+Movie libraries under `/Media`.
+
+This setup is not recommended as it requires more config setup than Scenario 1. It also the changing of Sonarr/Radarr root paths and updating of those root paths for existing movies.
+
+_Note: You could do the same to TV shows \(i.e. have multiple sub-dirs within `TV`\), but this guide will not go over that. However, the steps are similar to the ones below._
+
+Example:
+
+```text
+Media
+├── Movies
+├── Movies-4K
+├── Movies-Anime
+├── Movies-Foreign
+├── Movies-Kids
+├── Music
+└── TV
+```
+
+_Note: You could do the same to TV shows, but this guide will not go over that. However, the steps are similar to the ones below._
+
+### 1. Create Folders in Google Drive
+
+Let's say you wanted to have separate movie libraries for:
+
+* General Movies
+* 4K Movies
+* Anime Movies
+* Foreign Movies
+* Movies for Kids
+
+You would first have to create these folders within the `/Media/` path in Google Drive.
+
+However, the root folder of `/Media/` will NOT contain anything but these folders \(and Music and TV folders\).
+
+_Note: Remember, folders are case sensitive in Google Drive and in Linux \(e.g. `4K` and `4k` are 2 different folders\)._
+
+For our example, we will create the following folders in Google Drive:
+
+* `/Media/Movies`\*
+* `/Media/Movies-4K`
+* `/Media/Movies-Anime`
+* `/Media/Movies-Foreign`
+* `/Media/Movies-Kids`
+
+\*_Note: This can be called anything else, such as `/Media/Movies-Main` or `/Media/Movies-All`._
+
+Screenshot:
+
+![](https://i.imgur.com/2MlgwFc.png)
+
+### 2. Add Libraries to Plex
+
+You will add each of these folders as separate libraries within Plex \(see \[\[example\|Install: Plex-Media-Server\#adding-the-movie-library\]\]\). You may name these libraries as whatever you want.
+
+The folders will be located under `/data` folder within Plex \(see \[\[Paths\|Basics: Cloudbox Paths\#plex\]\]\).
+
+In our example, this will be:
+
+* `/data/Movies`\*
+* `/data/Movies-4K`
+* `/data/Movies-Anime`
+* `/data/Movies-Foreign`
+* `/data/Movies-Kids`
+
+\*_Note: This can be called anything else, such as `/data/Movies-Main` or `/data/Movies-All`._
+
+### 3. Modify Plex Autoscan Config
+
+_Note: For Mediabox / Feederbox setups, this will be done on the Mediabox._
+
+1. On the server's shell, run the following command:
+
+   ```text
+    nano /opt/plex_autoscan/config/config.json
+   ```
+
+2. Scroll down to the `SERVER_PATH_MAPPINGS` section.
+   1. Under this section, you will need to add library paths \(as seen from within Plex\) with the corresponding `/mnt/unionfs/Media/` path.
+
+      The format will look like:
+
+      ```text
+       "/data/<folder>": [                <----- Plex Library Path
+         "/mnt/unionfs/Media/<folder>",   <----- Incoming folder path from webhooks (e.g. Radarr root path)
+         "My Drive/Media/<folder>/"       <----- Incoming folder path from Google Drive Monitoring (optional)
+       ],
+      ```
+
+      Note: Make sure the folder paths are within quotes \(e.g. `"/data/Movies/"`\) and there is a comma \(`,`\) after the close bracket \(`]`\) - all except the last one \(see example below\).
+
+   2. After the changes, the section will now look similar to this:
+
+      ```javascript
+       "SERVER_PATH_MAPPINGS": {
+         "/data/Movies/": [
+           "/mnt/unionfs/Media/Movies/",
+           "My Drive/Media/Movies/"
+         ],
+         "/data/Movies-4K/": [
+           "/mnt/unionfs/Media/Movies-4K/",
+           "My Drive/Media/Movies-4K/"
+         ],
+         "/data/Movies-Anime/": [
+           "/mnt/unionfs/Media/Movies-Anime/",
+           "My Drive/Media/Movies-Anime/"
+         ],
+         "/data/Movies-Foreign/": [
+           "/mnt/unionfs/Media/Movies-Foreign/",
+           "My Drive/Media/Movies-Foreign/"
+         ],
+         "/data/Movies-Kids/": [
+           "/mnt/unionfs/Media/Movies-Kids/",
+           "My Drive/Media/Movies-Kids/"
+         ],
+         "/data/TV/": [
+           "/tv/",
+           "/mnt/unionfs/Media/TV/"
+           "My Drive/Media/TV/"
+         ],
+         "/data/Music/": [
+           "/music/",
+           "/mnt/unionfs/Media/Music/",
+           "My Drive/Media/Music/"
+         ]
+       },
+      ```
+
+      Note: There may be paths such as `"My Drive/Media/Movies/"` filled in for \[\[Google Drive monitoring\|Plex Autoscan Extras\#google-drive-monitoring\]\]. If you are not planning on using this feature of Plex Autoscan, you can simply ignore them. If you do want to use it, you will then need to tweak the folders to match your Google Drive folder paths. See \[\[Plex Autoscan Extras\|Plex Autoscan Extras\#google-drive-monitoring\]\] for more info.
+3. Ctrl + X Y Enter to save.
+4. Restart Plex Autoscan: `sudo systemctl restart plex_autoscan`
+
+### 4. Modify Cloudplow Config
+
+_Note: For Mediabox / Feederbox setups, this will be done on the Feederbox._
+
+1. On the server's shell, run the following command:
+
+   ```text
+    nano /opt/cloudplow/config.json
+   ```
+
+2. Set the following for `remove_empty_dir_depth`:
+
+   ```javascript
+   "remove_empty_dir_depth": 1,
+   ```
+
+3. Ctrl + X Y Enter to save.
+4. Restart Cloudplow: `sudo systemctl restart cloudplow`.
+
+### 5. Change Root Paths in Radarr
+
+Set your Movie Paths in \[\[Radarr\|Install: Radarr\#8-adding-the-movies-path\]\] to reflect the new sub-dirs \(e.g. `/mnt/unionfs/Media/Movies-3D`\).
+
+### 6. Misc
+
+#### i. Change Root Paths in Plex Requests
+
+Set the default "Root save directory for movies" on the Radarr setup page of \[\[Plex Requests\|Extras: Plex-Requests\#3-settings"Root save directory for movies"\]\] \(e.g. `/mnt/unionfs/Media/Movies-3D`\).
+

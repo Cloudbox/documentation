@@ -14,6 +14,8 @@ Do stuff relevant to use case 2.
 {% endtab %}
 {% endtabs %}
 
+### Other Super Powers
+
 {% hint style="info" %}
 Some hint
 {% endhint %}
@@ -25,6 +27,8 @@ Some warning
 {% hint style="danger" %}
 Stranger Danger
 {% endhint %}
+
+#### Weird Super Powers
 
 {% hint style="success" %}
 Success!
