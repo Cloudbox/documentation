@@ -2,17 +2,17 @@
 
 A fully functional Cloudbox requires certain requirements to be met. This page aims to clear this up.
 
-Cloudbox was designed to be:
+Cloudbox was designed around:
 
-* setup on a remote server.
-* accessed with a personal domain.
-* store media on cloud storage.
+* installation on a remote [server](prerequisites-server.md).
+* access via a personal [domain](prerequisites-domain-name.md).
+* media on [cloud storage](prerequisites-cloud-storage.md).
 
 This means that Cloudbox requires:
 
-* a remote server with root-level access.
-* a personal domain.
-* cloud storage provider account.
+* a remote [server](prerequisites-server.md) with root-level access.
+* a personal [domain](prerequisites-domain-name.md)
+* a [cloud storage](prerequisites-cloud-storage.md) provider account.
 
-Although Cloudbox and its tools can be setup without the aforementioned requirements \[for example on a home server\], it is outside the scope of this wiki and support channels.
+Although Cloudbox and its tools can be set up without some of these requirements \[for example on a home server\], it is outside the scope of this wiki and support channels.
 
