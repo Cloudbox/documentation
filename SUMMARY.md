@@ -58,7 +58,7 @@
 * [Overview](install-feederbox-mediabox/install-overview.md)
 * [Dependencies](install-feederbox-mediabox/install-dependencies/README.md)
   * [\[Develop Branch\]\(Install-Dependencies-\(Develop-Branch\).md\)](install-feederbox-mediabox/install-dependencies/develop-branch-install-dependencies-develop-branch-.md.md)
-* [\[\[Settings\|Install: Settings\]\]](install-feederbox-mediabox/settings-or-install-settings/README.md)
+* [Settings](install-feederbox-mediabox/settings-or-install-settings/README.md)
   * [accounts.yml](install-feederbox-mediabox/settings-or-install-settings/install-accounts.yml.md)
   * [settings.yml](install-feederbox-mediabox/settings-or-install-settings/install-settings.yml.md)
 * [Preinstall](install-feederbox-mediabox/install-preinstall/README.md)
