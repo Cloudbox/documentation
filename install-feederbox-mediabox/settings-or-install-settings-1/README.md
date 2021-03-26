@@ -1,2 +1,2 @@
-# \[\[Settings\|Install: Settings\]\]
+# Settings
 

@@ -26,5 +26,7 @@
 | [Radarr](https://radarr.video) \([Docker](https://github.com/hotio/docker-radarr)\) |  | ![](https://github.com/Cloudbox/Assets/blob/master/images/wiki/check-mark.png) |  | ![](https://github.com/Cloudbox/Assets/blob/master/images/wiki/check-mark.png) |
 | [Lidarr](https://lidarr.audio) \([Docker](https://github.com/hotio/docker-lidarr)\) |  | ![](https://github.com/Cloudbox/Assets/blob/master/images/wiki/check-mark.png) |  | ![](https://github.com/Cloudbox/Assets/blob/master/images/wiki/check-mark.png) |
 
+![](../.gitbook/assets/image%20%281%29.png)
+
 \* Default
 
