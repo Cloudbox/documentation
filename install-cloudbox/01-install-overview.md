@@ -2,11 +2,17 @@
 
 Read through this entire setup process at least once before you begin. There are several steps that all need to be completed before installation is complete.
 
-Before you begin: 1. Have you reviewed the [presumptions](https://github.com/Cloudbox/Cloudbox/wiki/Prerequisites%3A-Presumptions)? 1. Do you have a [server](https://github.com/Cloudbox/Cloudbox/wiki/Prerequisites%3A-Server) that meets cloudbox' requirements? 1. Have you set up your [domain](https://github.com/Cloudbox/Cloudbox/wiki/Prerequisites%3A-Domain-Name)?
+Before you begin: 
+
+1. Have you reviewed the [presumptions](https://github.com/Cloudbox/Cloudbox/wiki/Prerequisites%3A-Presumptions)? 
+
+2. Do you have a [server](https://github.com/Cloudbox/Cloudbox/wiki/Prerequisites%3A-Server) that meets cloudbox' requirements? 
+
+3. Have you set up your [domain](https://github.com/Cloudbox/Cloudbox/wiki/Prerequisites%3A-Domain-Name)?
 
 Points regarding setup process:
 
-* Installation does not require a previous account to be setup as **Step 5** \(i.e \[\[Preinstall\|Install: Preinstall\]\]\), will create a user account for you. So you can start installing Cloudbox from a root account if you choose.
+* Installation does not require a user account to be setup as the [Preinstall step](05-preinstall.md) will create a user account for you. You can start installing Cloudbox from a root account if you choose.
 
 Note: **THERE IS NO AUTOMATED UNINSTALL**.
 

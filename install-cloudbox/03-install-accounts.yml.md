@@ -1,6 +1,6 @@
 # Accounts
 
-## Overview of accounts.yml \#\#
+## Overview of accounts.yml
 
 ```yaml
 ---
@@ -10,32 +10,33 @@ user:
   domain: testcloudbox.ml
   email: your@email.com
 cloudflare:
-  email:
-  api:
+  email: bing@bang.boing
+  api: YOUR_CLOUDFLARE_API_KEY
 plex:
-  user:
-  pass:
+  user: YOUR_PLEX_USER
+  pass: YOUR_PLEX_PASSWORD
 pushover:
-  app_token:
-  user_key:
-  priority:
-apprise:
+  app_token: YOUR_PUSHOVER_APP_TOKEN
+  user_key: YOUR_PUSHOVER_USER_KEY
+  priority: YOUR_PUSHOVER_PRIORITY
+apprise: YOUR_APPRISE_URL
 ```
 
-## Editing accounts.yml \#\#
+{% hint style="danger" %}
+The user in this file must not be **root**.
+{% endhint %}
 
-### NOTE: The user defined in this file should NOT be `root`. \#\#\#\#
+{% hint style="danger" %}
+Enter a password for the user.  Don't leave it blank. Even if you are planning to use SSH keys to connect to your box.  This user and password are used to set up authentication for some applications in this repo and Community, and a blank password may cause trouble there.
+{% endhint %}
 
-### NOTE: You will need to edit everything shown above to reflect your domain, email, user, and password. \#\#\#\#
+{% hint style="info" %}
+This is a YAML file, and is subject to standard YAML format rules.  Google can help if you are unfamiliar with this format.
+{% endhint %}
 
-### IMPORTANT: Enter a password for the user.  Don't leave it blank. Even if you are planning to use SSH keys to connect to your box.  This user and password are used to set up authentication for some applications in this repo and Community, and a blank password may cause trouble there. \#\#\#\#
+## Editing accounts.yml
 
-### IMPORTANT: This is a YAML file, and values you can enter here are subject to YAML file format rules.  If you use special characters in your password, wrap the password in quotes \[or escape the characters correctly, if you are familiar with that concept\].  It would be easiest to avoid using quote characters within your password. \#\#\#\#
-
-Examples:  
- \`\`\` pass: MyP4s5w0rd1s4w350m3 pass: "!@\#$%^&\*" pass: multiple words work fine unquoted pass: "or quote them to be safe" \`\`\` There are a variety of characters that YAML does not allow as the first character of an unquoted string. Any of the following will result in errors: \`\`\` pass: 'WhateverWhatever pass: "WhateverWhatever pass: \[WhateverWhatever pass: \]WhateverWhatever pass: {WhateverWhatever pass: }WhateverWhatever pass: &gt;WhateverWhatever pass: \|WhateverWhatever pass: \*WhateverWhatever pass: &WhateverWhatever pass: !WhateverWhatever pass: %WhateverWhatever pass: \`WhateverWhatever pass: @WhateverWhatever pass: ,WhateverWhatever pass: \#WhateverWhatever \`\`\` For the most part, these will report a sensible error pointing to the specific problem. Wrapping the password in quotes would eliminate that error for all but the first two: \`\`\` pass: ",WhateverWhatever" etc. \`\`\` The last case will fail in a non-obvious way; the userdata validation will complain that you haven't entered a password because Ansible doesn't read what looks like a comment. As far as Ansible is concerned, these are all equivalent: \`\`\` pass: pass: \#Whatever \#this is my super secret password pass: \#Whatever \`\`\` These would work fine: \`\`\` pass: "\#Whatever" \#this is my super secret password pass: "\#Whatever" \`\`\` If you really want to use quote characters in your password, refer to a YAML syntax reference. There are plenty of options for secure passwords without including those two characters, and given the requirement to escape them properly we recommend you just avoid them. \[\[Relevant XKCD\|https://xkcd.com/936/\]\]
-
-### NOTE: Formatting \[notably spacing\] is significant in this file.  There needs to be a space between `key:` and `value` as shown above. Leaving the space out will result in parsing errors that may present in unclear ways, even though the file may pass YAML validation. Missing spaces in YAML config files is a routine source of support issues. \#\#\#\#
+You will need to edit everything shown above to reflect your domain, email, user, and password.  Some of these values can remain blank.  Details below.
 
 1. Go to the Cloudbox folder:
 
@@ -43,18 +44,12 @@ Examples:
    cd ~/cloudbox/
    ```
 
-2. Open the file for editing:
-   * For plain text `accounts.yml`:
+2. Open the file for editing::
 
-     ```bash
-     nano accounts.yml
-     ```
+   ```bash
+   nano accounts.yml
+   ```
 
-   * For encrypted `accounts.yml` \[encryption of this file is covered later; if this is your first install, it will not be set up yet and you should use the "plain text" option\]:
-
-     ```bash
-     ansible-vault edit accounts.yml
-     ```
 3. When done editing, save the file: Ctrl + X Y Enter.
 
 ## Options in accounts.yml
@@ -85,11 +80,13 @@ Examples:
   * This parameter is optional.
   * Default is blank.
 * `plex`: Plex.tv account credentials.
-  * This will be used to 1\) claim the Plex server under your username, and 2\) generate Plex Access Tokens for apps such as Plex Autoscan, etc. 
+  * This will be used to 
+    * claim the Plex server under your username
+    * generate Plex Access Tokens for apps such as Plex Autoscan, etc. 
   * `user` - Plex username or email address on the profile.
   * `pass` - Plex password.
   * This parameter is optional.
-  * **The new Two-Factor Authentication \[TFA\] system added by Plex will prevent these automated operations from succeeding.  The Plex article \[\[introducing TFA\|**[**https://support.plex.tv/articles/two-factor-authentication/**](https://support.plex.tv/articles/two-factor-authentication/)**\]\] has a possible workaround.  If successful, you will need to perform that workaround every time you run the `plex` tag.  You can also disable TFA while you run the cloudbox setup \[or the plex tag\] and then re-enable it when complete.**
+  * **The new Two-Factor Authentication \[TFA\] system added by Plex will prevent these automated operations from succeeding.  The** [**Plex article introducing TFA**](https://support.plex.tv/articles/two-factor-authentication/) **has a possible workaround.  If successful, you will need to perform that workaround every time you run the `plex` tag.  You can also disable TFA while you run the cloudbox setup \[or the plex tag\] and then re-enable it when complete.**
 * `pushover`: Pushover settings.
   * This will be used to send out messages during certain tasks \(e.g. backup\).
   * `app_token` - Pushover Application API Token \(create a new application for Cloudbox\).

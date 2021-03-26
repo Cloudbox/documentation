@@ -1,6 +1,6 @@
 # Settings
 
-## Overview of settings.yml \#\#
+## Overview of settings.yml
 
 ```yaml
 ---
@@ -16,7 +16,7 @@ rclone:
 shell: bash
 ```
 
-## Editing settings.yml \#\#
+## Editing settings.yml
 
 1. Go to the Cloudbox folder:
 
@@ -34,15 +34,22 @@ shell: bash
 
 ## Options in settings.yml
 
-**Note:** Having `{{user}}` in the path tells Ansible to fill in the username, automatically. You do not need to fill in your actual username.
+{% hint style="info" %}
+You can use Ansible varables like  `{{user}}` in this file.
+{% endhint %}
 
 * `downloads`: Where downloads go.
   * `nzbs`: Path for Usenet app downloads.
     * Default is `/mnt/local/downloads/nzbs`.
-      * Example: With the default path, NZBGet downloads would go to `/mnt/local/downloads/nzbs/nzbget/completed`, where as, SABnzbd downloads would go to `/mnt/local/downloads/nzbs/sabnzbd/complete`.
+      * Example: with the default path,   
+        NZBGet downloads would go to   
+        `/mnt/local/downloads/nzbs/nzbget/completed`, 
+
+        SABnzbd downloads would go to   
+        `/mnt/local/downloads/nzbs/sabnzbd/complete`.
   * `torrents`: Path for BitTorrent app downloads.
     * Default is `/mnt/local/downloads/torrents`.
-      * Example: With the default path, ruTorrent downloads would go to `/mnt/local/downloads/torrents/rutorrent/completed`.
+      * Example: with the default path,  ruTorrent downloads would go to`/mnt/local/downloads/torrents/rutorrent/completed`.
 * `plex`: Plex options.
   * `tag`: Determines what version of Plex to install. 
 * Options are `public`, `beta`, or \[\[version tag\|[https://hub.docker.com/r/cloudb0x/plex/tags](https://hub.docker.com/r/cloudb0x/plex/tags)\]\] \(e.g. `"1.12.3.4973-215c28d86"`\).
