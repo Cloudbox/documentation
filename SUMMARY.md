@@ -22,6 +22,7 @@
 * [Plex](prerequisites/prerequisites-plex.md)
 * [Emby](prerequisites/prerequisites-emby.md)
 * [Usenet vs. BitTorrent](prerequisites/prerequisites-usenet-vs-bittorrent.md)
+* [Home Server](prerequisites/home-server.md)
 
 ## Install Cloudbox
 

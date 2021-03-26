@@ -1,6 +1,6 @@
 # Domain Name
 
-**You will need a domain name** as Cloudbox apps are only accessed via [https://appname.\_yourdomain.com\_](https://appname._yourdomain.com_) \(see \[\[Basics: Accessing Cloudbox Apps\]\]\). The steps below will help you set up a domain and DNS settings for use with Cloudbox.
+**You will need a domain name** as Cloudbox apps are only accessed via [https://appname.\_yourdomain.com\_](https://appname._yourdomain.com_) \(see [here](../basics/basics-accessing-cloudbox-apps.md)\). The steps below will help you set up a domain and DNS settings for use with Cloudbox.
 
 Ports are \[for the most part\] bound only to the internal `cloudbox` docker network, which means they are not visible on the host; you won't be able to connect to the apps using `IP:PORT`.
 
@@ -10,7 +10,7 @@ Get a domain name from any domain name registry \(e.g. [Namecheap](https://Namec
 
 If you already have one, you may skip this step.
 
-_Note: Free domain name providers, such as_ [_Freenom_](https://www.freenom.com/)_, do not support wildcard DNS settings, and paid domain names can be had for less than a dollar per year \(see promo deals on various sites\). However, you can add them to \[\[Cloudflare\|Prerequisites: Cloudflare\]\] and not have to worry about it._
+_Note: Free domain name providers, such as_ [_Freenom_](https://www.freenom.com/)_, do not support wildcard DNS settings, and paid domain names can be had for less than a dollar per year \(see promo deals on various sites\). However, you can add them to_ [_Cloudflare_](prerequisites-cloudflare.md) _and not have to worry about it._
 
 If you are planning to use the automatic Cloudflare integration, there are some top-level domains \[TLDs\] that will not work with it. Refer to [this page](https://support.cloudflare.com/hc/en-us/articles/360020296512-DNS-Troubleshooting-FAQ).
 
@@ -25,7 +25,7 @@ Pick one of the setups below. This will on whether you meet certain criteria, as
 **Notes:**
 
 * For DNS providers that allow wildcards.
-* For \[\[Cloudbox install type\|Basics: Cloudbox Install Types\]\].
+* For [Cloudbox install type](../basics/basics-cloudbox-install-types.md).
 
 **Steps:**
 
@@ -42,8 +42,8 @@ Example Namecheap &gt; Domain List &gt; Manage &gt; Advanced DNS &gt; Add New Re
 **Notes:**
 
 * For DNS providers that do not allow wildcards \(e.g. Freenom\).
-* For \[\[Mediabox / Feederbox install types\|Basics: Cloudbox Install Types\]\].
-* For \[\[Cloudflare\|Prerequisites: Cloudflare\]\] users.
+* For [Mediabox / Feederbox install types](../basics/basics-cloudbox-install-types.md).
+* For [Cloudflare](prerequisites-cloudflare.md) users.
 
   Note: if you provide a Cloudflare email and API Key in your settings, the Cloudbox installer will set this up for you automatically.
 

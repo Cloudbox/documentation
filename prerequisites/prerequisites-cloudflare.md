@@ -25,7 +25,7 @@ Although Cloudflare is not required for Cloudbox, it is still recommended becaus
 5. Can optionally enable CDN / Proxy for your subdomains.
 6. It's free.
 
-_Note: Cloudbox does not enable CDN / Proxy by default, but you may do so yourself after installing Cloudbox \(see section \[\[below\|Prerequisites: Cloudflare\#post-setup\]\]\)._
+_Note: Cloudbox does not enable CDN / Proxy by default, but you may do so yourself after installing Cloudbox \(see section_ [_below_](prerequisites-cloudflare.md#post-setup)_\)._
 
 ## Sign Up
 

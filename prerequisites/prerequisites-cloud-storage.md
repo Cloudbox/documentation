@@ -4,7 +4,7 @@
 
 Cloudbox can be setup to use any cloud storage provider that [Rclone](https://rclone.org/) supports. However, Google Drive via [G-Suite Business](https://gsuite.google.com/pricing.html) is the popular choice among users.
 
-It is advised that you do NOT use a educational GSuite account or any GSuite account you may buy on the secondary market \[eBay and the like\].
+It is **strongly** advised that you do NOT use an educational GSuite account or any GSuite account you may buy on the secondary market \[eBay and the like\].
 
 ## Basics
 
@@ -29,7 +29,7 @@ If you have media in other folders, you can simply move them into these folders 
 
 Note 1: For Google Drive, you can use the [Shift-Z trick](https://www.labnol.org/internet/add-files-multiple-drive-folders/28715/) to "symlink" folders here.
 
-Note 2: All the paths/folders mentioned here, and elsewhere, are **CASE SENSITIVE** \(see \[\[Cloudbox Paths\|Basics: Cloudbox Paths\]\]\).
+Note 2: All the paths/folders mentioned here, and elsewhere, are **CASE SENSITIVE** \(see [Cloudbox Paths](../basics/basics-cloudbox-paths.md)\).
 
- [1](prerequisites-cloud-storage.md#note1ref) If you would like to customize your Plex libraries beyond what is listed above, see \[\[Customizing Plex Libraries\]\].
+ [1](prerequisites-cloud-storage.md#note1ref) If you would like to customize your Plex libraries beyond what is listed above, see [Customizing Plex Libraries](../unlinked-pages/customizing-plex-libraries.md).
 

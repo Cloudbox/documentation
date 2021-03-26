@@ -8,5 +8,5 @@ If you plan on using [Usenet](https://www.reddit.com/r/usenet/wiki/faq#wiki_usen
 
 ## ii. BitTorrent
 
-If you plan on using torrents with Cloudbox, we recommend you have access to a [private torrent tracker](https://www.reddit.com/r/trackers/wiki/getting_into_private_trackers) as most servers don't allow public ones. However, if you still want to use public torrent trackers with Cloudbox, you are free to do so.
+If you plan on using torrents with Cloudbox, we recommend you have access to a [private torrent tracker](https://www.reddit.com/r/trackers/wiki/getting_into_private_trackers) as most server hosts don't allow public ones. However, if you still want to use public torrent trackers with Cloudbox, you are free to do so.  You will need to make a change to the default rutorrent configuration for that.
 
