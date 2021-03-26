@@ -1,4 +1,4 @@
-# accounts.yml
+# Accounts
 
 ## Overview of accounts.yml \#\#
 

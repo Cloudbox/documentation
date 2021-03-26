@@ -1,4 +1,4 @@
-# settings.yml
+# Settings
 
 ## Overview of settings.yml \#\#
 

@@ -7,12 +7,12 @@
 | Common Tools and Tasks | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
 | [Docker](https://www.docker.com/community-edition) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
 | [Rclone](https://rclone.org) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
-| Mounts: [MergerFS](https://github.com/trapexit/mergerfs)\* / [UnionFS](http://manpages.ubuntu.com/manpages/trusty/man8/unionfs-fuse.8.html) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
-| Mounts: [Rclone VFS](https://rclone.org)\* / [Rclone Cache](https://rclone.org) / [Plexdrive 4](https://github.com/dweidenfeld/plexdrive) / [Plexdrive 5](https://github.com/dweidenfeld/plexdrive) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
+| Mounts: [MergerFS](https://github.com/trapexit/mergerfs) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
+| Mounts: [Rclone VFS](https://rclone.org) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
 | Scripts | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
 | [Nginx-Proxy](https://github.com/jwilder/nginx-proxy) \([Docker](https://hub.docker.com/r/jwilder/nginx-proxy/)\) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
 | [Plex](https://www.plex.tv) \([Docker](https://github.com/plexinc/pms-docker)\) |  | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |  |
-| [Tautulli \(PlexPy\)](http://tautulli.com/) \([Docker](https://github.com/Tautulli/Tautulli-Docker)\) |  | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |  |
+| [Tautulli ](http://tautulli.com/)\([Docker](https://github.com/Tautulli/Tautulli-Docker)\) |  | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |  |
 | [Ombi](https://ombi.io)  \([Docker](https://github.com/hotio/docker-ombi)\) |  | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |  |
 | [Plex Autoscan](https://github.com/l3uddz/plex_autoscan) \(Media Scanner Helper Script\) |  | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |  |
 | [Portainer](https://portainer.io) \([Docker](https://hub.docker.com/r/portainer/portainer/)\) |  | ![](../.gitbook/assets/check.png) |  | ![](../.gitbook/assets/check.png) |
@@ -25,6 +25,4 @@
 | [Sonarr](https://sonarr.tv) \([Docker](https://github.com/hotio/docker-sonarr)\) |  | ![](../.gitbook/assets/check.png) |  | ![](../.gitbook/assets/check.png) |
 | [Radarr](https://radarr.video) \([Docker](https://github.com/hotio/docker-radarr)\) |  | ![](../.gitbook/assets/check.png) |  | ![](../.gitbook/assets/check.png) |
 | [Lidarr](https://lidarr.audio) \([Docker](https://github.com/hotio/docker-lidarr)\) |  | ![](../.gitbook/assets/check.png) |  | ![](../.gitbook/assets/check.png) |
-
-\* Default
 

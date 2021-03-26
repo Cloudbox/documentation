@@ -1,2 +1,2 @@
-# \[\[Cloudplow\]\] \(Media Uploader\)
+# Cloudplow \(Media Uploader\)
 
