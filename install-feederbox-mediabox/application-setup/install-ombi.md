@@ -134,44 +134,44 @@ Find the Media Server menu and select `Plex`. Enter your Plex username and passw
    * "Radarr server IP or Hostname": `radarr`
      * _For a Feeder / Plex setup, use `radarr.yourdomain.com` \(or the IP address of your Feeder box\) instead._
 
-* "Radarr server port":`7878`
-  * _For a Feeder / Plex setup, use `443` instead._
-* "Radarr API key": \[\[Your Radarr API Key\|Install: Radarr\#9-retrieving-the-api-key\]\]
-* "Enable Radarr SSL": `disabled`.
-  * _For Feeder / Plex setup, set it to `enabled`._
-* Click `Submit`.
-* Click `Test Connectivity`. A fly in notification in the upper right corner will show "Successfully connected to Radarr!".
-* Click `Get Quality Profiles` and choose your preferred "Download quality profile for Radarr".
-* Click `Get Root Folders` and choose your preferred Root Folder, most cases it's simply `/Movies`.
-* Select the desired "Default Minimun Availability"
-* Click `Submit`.
+3. "Radarr server port":`7878`
+   * _For a Feeder / Plex setup, use `443` instead._
+4. "Radarr API key": \[\[Your Radarr API Key\|Install: Radarr\#9-retrieving-the-api-key\]\]
+5. "Enable Radarr SSL": `disabled`.
+   * _For Feeder / Plex setup, set it to `enabled`._
+6. Click `Submit`.
+7. Click `Test Connectivity`. A fly in notification in the upper right corner will show "Successfully connected to Radarr!".
+8. Click `Get Quality Profiles` and choose your preferred "Download quality profile for Radarr".
+9. Click `Get Root Folders` and choose your preferred Root Folder, most cases it's simply `/Movies`.
+10. Select the desired "Default Minimun Availability"
+11. Click `Submit`.
 
-  ![](https://i.imgur.com/J7MTPaz.png)
+    ![](https://i.imgur.com/J7MTPaz.png)
 
-1. Sonarr Settings
-2. Under TV menu section you will find the "Sonarr" settings page:
+12. Sonarr Settings
+13. Under TV menu section you will find the "Sonarr" settings page:
 
-   _Note: There are some slight differences in the settings for Feeder / Plex setups. See notes below._
+    _Note: There are some slight differences in the settings for Feeder / Plex setups. See notes below._
 
-   _Note: This is assuming you have already configured Sonarr. If Sonarr has not been set up, some things below will not work; for example, Ombi can't get your Sonarr root folders if you haven't set any up in Sonarr yet._
+    _Note: This is assuming you have already configured Sonarr. If Sonarr has not been set up, some things below will not work; for example, Ombi can't get your Sonarr root folders if you haven't set any up in Sonarr yet._
 
-   * Check "Enable Sonarr"
-   * "Sonarr server IP or Hostname": `sonarr`
-     * _For Feeder / Plex setup, use `sonarr.yourdomain.com` \(or the IP address of your Feeder box\) instead._
-   * "Sonarr server port":`8989`
-     * _For Feeder / Plex setup, use `443` instead._
-   * "Sonarr API key": \[\[Your Sonarr API Key\|Install: Sonarr\#9-retrieving-the-api-key\]\]
-   * "Enable Sonarr SSL": `disabled`.
-     * _For Feeder / Plex setup, set it to `enabled`._
+    * Check "Enable Sonarr"
+    * "Sonarr server IP or Hostname": `sonarr`
+      * _For Feeder / Plex setup, use `sonarr.yourdomain.com` \(or the IP address of your Feeder box\) instead._
+    * "Sonarr server port":`8989`
+      * _For Feeder / Plex setup, use `443` instead._
+    * "Sonarr API key": \[\[Your Sonarr API Key\|Install: Sonarr\#9-retrieving-the-api-key\]\]
+    * "Enable Sonarr SSL": `disabled`.
+      * _For Feeder / Plex setup, set it to `enabled`._
 
-* Click `Submit`.
-* Click `Test Connectivity`. A fly in notification in the upper right corner will show "Successfully connected to Sonarr!".
-* Click `Get Quality Profiles` and choose your preferred "Download quality profile".
-* Click `Get Root Folders` and choose your preferred Root Folder, most cases it's `/tv` for TV shows.
-* Enable season folders if you wish.
-* Click `Submit`.
+14. Click `Submit`.
+15. Click `Test Connectivity`. A fly in notification in the upper right corner will show "Successfully connected to Sonarr!".
+16. Click `Get Quality Profiles` and choose your preferred "Download quality profile".
+17. Click `Get Root Folders` and choose your preferred Root Folder, most cases it's `/tv` for TV shows.
+18. Enable season folders if you wish.
+19. Click `Submit`.
 
-  \_Note: If you have a separate Plex and Feeder setup, this will be done on the server where Plex is installed.
+    \_Note: If you have a separate Plex and Feeder setup, this will be done on the server where Plex is installed.
 
-  ![](https://i.imgur.com/HXYBT5K.png)
+    ![](https://i.imgur.com/HXYBT5K.png)
 
