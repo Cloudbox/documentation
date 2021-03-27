@@ -28,7 +28,6 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 
    ```bash
    ~$ rclone config
-   2021/03/27 14:40:24 NOTICE: Config file "/home/seed/.config/rclone/rclone.conf" not found - using defaults
    No remotes found - make a new one
    n) New remote
    s) Set configuration password
@@ -39,12 +38,6 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 3. For "name", type in `google` and press Enter.
 
    ```bash
-   ~$ rclone config
-   2021/03/27 14:40:24 NOTICE: Config file "/home/seed/.config/rclone/rclone.conf" not found - using defaults
-   No remotes found - make a new one
-   n) New remote
-   s) Set configuration password
-   q) Quit config
    n/s/q> n
    name> google
    ```
@@ -52,13 +45,6 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 4. For "Type of storage", type in `drive`, or the corresponding number, and press Enter. You will be presented with a long list of storage backends, which have been removed here for space.
 
    ```bash
-   ~$ rclone config
-   2021/03/27 14:40:24 NOTICE: Config file "/home/seed/.config/rclone/rclone.conf" not found - using defaults
-   No remotes found - make a new one
-   n) New remote
-   s) Set configuration password
-   q) Quit config
-   n/s/q> n
    name> google
    Type of storage to configure.
    Enter a string value. Press Enter for the default ("").
@@ -81,12 +67,13 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
    See https://rclone.org/drive/#making-your-own-client-id for how to create your own.
    If you leave this blank, it will use an internal key which is low performance.
    Enter a string value. Press Enter for the default ("").
-   client_id> 123456789012-abcdefghijklmnopqrstuvwxyzabcdef.apps.googleusercontent.com
+   client_id> 123456789012-REDACTED.apps.googleusercontent.com
    ```
 
 6. For "Google Application Client Secret", paste the Client Secret from Step \#5, and press Enter.
 
    ```bash
+   client_id> 123456789012-REDACTED.apps.googleusercontent.com
    OAuth Client Secret
    Leave blank normally.
    Enter a string value. Press Enter for the default ("").
@@ -96,6 +83,7 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 7. For the "Scope that rclone should use when requesting access from drive", type in `drive`, or the corresponding number \(i.e. `1`\), to select "Full access all files, excluding Application Data Folder", and press Enter.
 
    ```bash
+   client_secret> ABC123def456GHI789jkl012
    Scope that rclone should use when requesting access from drive.
    Enter a string value. Press Enter for the default ("").
    Choose a number from below, or type in your own value
@@ -119,6 +107,7 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 8. For "ID of the root folder", leave blank and press Enter.
 
    ```bash
+   scope> 1
    ID of the root folder
    Leave blank normally.
 
@@ -132,6 +121,7 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 9. For "Service Account Credentials JSON file path", leave blank and press Enter.
 
    ```bash
+   root_folder_id>
    Service Account Credentials JSON file path
    Leave blank normally.
    Needed only if you want use SA instead of interactive login.
@@ -145,6 +135,7 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 10. For "Edit advanced config", type `n` and press Enter.
 
     ```bash
+    service_account_file>
     Edit advanced config? (y/n)
     y) Yes
     n) No (default)
@@ -154,6 +145,7 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 11. For "Use auto config?", type `n` for "...remote or headless machine" and press Enter.
 
     ```bash
+    y/n> n
     Remote config
     Use auto config?
     * Say Y if not sure
@@ -166,7 +158,8 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 12. In the next section, copy the link shown, and open it in your host PC's browser.
 
     ```bash
-    Please go to the following link: https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=123456789012-...
+    y/n> n
+    Please go to the following link: https://accounts.google.com/o/oauth2/auth?...
     Log in and authorize rclone for access
     Enter verification code>
     ```
@@ -186,14 +179,15 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 16. Paste the "verification code" at the command prompt and press Enter.
 
     ```bash
-    Please go to the following link: https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=123456789012-...
+    Please go to the following link: https://accounts.google.com/o/oauth2/auth?...
     Log in and authorize rclone for access
-    Enter verification code> 4/1AY0e-DECAFBADNuioQRjX3_s0SND-DEADBEEFPx4gLUpE4bNKoA0s54caI8
+    Enter verification code> 4/1AY0e-REDACTED-REDACTED
     ```
 
 17. For "Configure this as a team drive?", type `n` and press Enter.
 
     ```bash
+    Enter verification code> 4/1AY0e-REDACTED-REDACTED
     Configure this as a Shared Drive (Team Drive)?
     y) Yes
     n) No (default)
@@ -205,11 +199,12 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 18. To confirm that the remote details look OK, type `y` and press Enter.
 
     ```bash
+    y/n> n
     --------------------
     [google]
     type = drive
-    client_id = 695133368583-re92a7cqtpgjsbo8ilpl1jb37gkitbnl.apps.googleusercontent.com
-    client_secret = 9TBCjvXpe6XqhYOPnIPjQNGH
+    client_id = 695133368583-REDACTED.apps.googleusercontent.com
+    client_secret = REDACTED
     scope = drive
     token = {"access_token":"REDACTED","token_type":"Bearer","refresh_token":"REDACTED","expiry":"2021-03-27T16:04:42.600702975Z"}
     --------------------
