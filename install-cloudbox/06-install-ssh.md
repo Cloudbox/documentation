@@ -1,6 +1,6 @@
 # SSH
 
-The [preinstall]() created a user account for you based on what you had in [accounts.yml]().
+The [preinstall](06-install-ssh.md) created a user account for you based on what you had in [accounts.yml](06-install-ssh.md).
 
 If you are currently logged in as root, log out and log back in with the user account.
 
@@ -21,3 +21,4 @@ ssh yourusername@<cloudbox/mediabox/feederbox>.yourdomain.ltd
 ```
 
 You may want to set up [passwordless ssh logins](https://www.tecmint.com/ssh-passwordless-login-using-ssh-keygen-in-5-easy-steps/)
+
