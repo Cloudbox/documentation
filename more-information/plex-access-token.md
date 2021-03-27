@@ -2,6 +2,14 @@
 
 The following guide mentions two ways of obtaining a Plex Access Token for your Plex account.
 
+## From Plex website
+
+1. Go to https://plex.tv/claim
+2. Log in if need be
+3. A claim code will be displayed:
+
+![](../.gitbook/assets/image.png)
+
 ## Cloudbox Role
 
 You will need your Plex credentials filled in `~/cloudbox/accounts.yml`. If you already do, skip steps 2-4.
