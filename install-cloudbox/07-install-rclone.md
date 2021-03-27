@@ -273,9 +273,9 @@ To rename the Google Drive remote to `google`:
    ```text
    [google]
    type = drive
-   client_id = 1234567890123-mjffsmxvendscftuvnyngkhegapovgnv.apps.googleusercontent.com
-   client_secret = klflzftkrwuwuedesxzewsfz
-   token = {"access_token":"ya30.gelftvrymioiilvdtfegfvhfgallrhocewjckdnnvmxdjpjzbdhkmgulvqhgbafkdtpottzthhnyzysxwlpf-38ikRIxZvimyoxyKdse$
+   client_id = 1234567890123-REDACTED.apps.googleusercontent.com
+   client_secret = REDACTED
+   token = {"access_token":"REDACTED...
    ```
 
 4. Save the file and exit: Ctrl + X Y Enter.
@@ -285,7 +285,7 @@ To rename the Google Drive remote to `google`:
    cp -n $(rclone config file | tail -n 1) ~/.config/rclone/rclone.conf
    ```
 
-6. Give it the proper ownership and permissions. Replace `user` and `group` to match yours' \(see [here](https://github.com/Cloudbox/gitbook/tree/52490170d387c232b354a47724ac278ab2998d5c/FAQ/README.md#find-your-user-id-uid-and-group-id-gid)\):
+6. Give it the proper ownership and permissions. Replace `user` and `group` to match yours \(see [here](https://github.com/Cloudbox/gitbook/tree/52490170d387c232b354a47724ac278ab2998d5c/FAQ/README.md#find-your-user-id-uid-and-group-id-gid)\) \(if you have used the defaults during setup your user and group are both `seed`\):
 
    ```bash
    sudo chown seed:seed ~/.config/rclone/rclone.conf
