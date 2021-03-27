@@ -166,15 +166,15 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
 
 13. If asked to login, use the Google Drive account you want to store your data in \(see \[\[Prerequisites\|Prerequisites: Cloud Storage\]\]\).
 
-    ![](https://i.imgur.com/fTrfnTD.png)
+    ![](../.gitbook/assets/rclone-gdrive-choose-account.png)
 
 14. Give access by clicking "Allow".
 
-    ![](https://i.imgur.com/SCYqFgL.png)
+    ![](../.gitbook/assets/rclone-gdrive-permission.png)
 
 15. You will now be given a "verification code". Copy it.
 
-    ![](https://i.imgur.com/waUb6qz.png)
+    ![](../.gitbook/assets/rclone-gdrive-auth-code.png)
 
 16. Paste the "verification code" at the command prompt and press Enter.
 
@@ -194,9 +194,9 @@ This guide goes through setting rclone up to connect to a Google Drive "My Drive
     y/n> n
     ```
 
-    NOTE: This guide is documenting the standard non-teamdrive case. If you are familiar with setting up teamdrives, you can do so here.
+    NOTE: This guide is documenting the standard non-teamdrive case. If you are familiar with setting up teamdrives, you can do so here.  
 
-18. To confirm that the remote details look OK, type `y` and press Enter.
+18. After confirming that the remote details look OK, type `y` and press Enter.
 
     ```bash
     y/n> n
