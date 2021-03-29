@@ -1,5 +1,7 @@
 # Cloudbox Install Types
 
+There are four cloudbox install "types"; this table shows which components are installed with each "type".
+
 |  | `core` | `cloudbox` | `mediabox` | `feederbox` |
 | :--- | :---: | :---: | :---: | :---: |
 | System Tweaks | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) | ![](../.gitbook/assets/check.png) |
