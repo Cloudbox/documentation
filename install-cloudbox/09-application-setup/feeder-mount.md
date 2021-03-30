@@ -1,5 +1,7 @@
 # Feeder Mount
 
+#### ONLY APPLICABLE TO FEEDERMOUNT/MEDIABOX SETUP
+
 ## Intro
 
 For setups with separate Feeder and Media boxes, you will have newly downloaded media that will not be instantly available on cloud storage \(e.g. Google Drive\) and, therefore, inaccessible to Mediabox \(e.g. Plex\) when Sonarr/Radarr sends a media scan request.
@@ -14,12 +16,12 @@ The following steps will be done on the Mediabox.
 
 1. In rclone config, create an sftp remote to your Feederbox called `feeder` \([asciicast](https://asciinema.org/a/184084?t=0&speed=1&size=medium&cols=75&rows=25)\).
 
-   _Note: If you don't already have one, add the `feederbox` \[\[subdomain\|Adding a Subdomain\]\] and point it to your Feederbox's IP address. If you are using Cloudflare, make sure CDN/Proxy is not enabled for this subdomain._
+   _Note: If you don't already have one, add the `feederbox`_ [_subdomain_](../../more-information/adding-a-subdomain.md) _and point it to your Feederbox's IP address. If you are using Cloudflare, make sure CDN/Proxy is not enabled for this subdomain._
 
 2. In your Cloudbox folder, run the following command:
 
    ```text
-   sudo ansible-playbook cloudbox.yml --tags feeder_mount
+   cb install feeder_mount
    ```
 
 3. Your docker containers will restart and media on Feederbox will be available to them.
@@ -33,7 +35,7 @@ The following steps will be done on the Mediabox.
 1. In your Cloudbox folder, run the following command:
 
    ```text
-   sudo ansible-playbook cloudbox.yml --tags feeder_unmount
+   cb install feeder_unmount
    ```
 
 2. Your docker containers will restart and media on local drive will be available in the UnionFS/MergerFS mount.

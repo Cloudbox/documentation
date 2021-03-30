@@ -16,11 +16,11 @@
 
 ### News-Servers
 
-* Add your \[\[news servers\|Prerequisites: Usenet vs BitTorrent\#i-usenet\]\].
+* Add your [news servers](../../prerequisites/prerequisites-usenet-vs-bittorrent.md#i-usenet).
 
 ### Security
 
-* Login settings are preset out of the box \(`user` / `passwd` as set in \[\[accounts.yml\|Install: accounts.yml\]\]\).
+* Login settings are preset out of the box \(`user` / `passwd` as set in [accounts.yml](../03-install-accounts.yml.md).
 
 ### Download Queue
 
