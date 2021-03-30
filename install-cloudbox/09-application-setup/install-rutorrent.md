@@ -2,7 +2,7 @@
 
 [ruTorrent](https://github.com/Novik/ruTorrent) \(by Novik\) is a front-end for the popular, lightweight, and extensible BitTorrent client [rtorrent](https://github.com/rakshasa/rtorrent) \(by Jari Sundell aka rakshasa\).
 
-_Note: public trackers are disabled by default in the standard install. Refer to the FAQ for_ [_instructions on re-enabling them_](https://github.com/Cloudbox/Cloudbox/wiki/FAQ#enable-access-to-public-torrent-trackers)_._
+_Note: public trackers are disabled by default in the standard install. Refer to the FAQ for_ [_instructions on re-enabling them_](../../troubleshooting/faq-from-cb.md#enable-access-to-public-torrent-trackers)_._
 
 ![](https://i.imgur.com/30dxlTc.png)
 
@@ -14,19 +14,19 @@ _Note: public trackers are disabled by default in the standard install. Refer to
 
 ### Login
 
-Login settings are preset out of the box \(`user` / `passwd` as set in \[\[accounts.yml\|Install: accounts.yml\]\]\).
+Login settings are preset out of the box \(`user` / `passwd` as set in [accounts.yml](../03-install-accounts.yml.md).
 
-_Note: If you need to change the password after installing Cloudbox, see the \[\[FAQ\|FAQ\#change-rutorrent-password-after-installation\]\]._
+_Note: If you need to change the password after installing Cloudbox, see the_ [_FAQ_](../../troubleshooting/faq-from-cb.md#change-rutorrent-password-after-installation)_._
 
 ### Setup
 
-The setup for \[\[Sonarr\|Install: Sonarr\#rutorrent\]\], \[\[Radarr\|Install: Radarr\#rutorrent\]\], and \[\[Lidarr\|Install: Lidarr\#rutorrent\]\] are done on their respective wiki pages.
+The setup for [Sonarr](install-sonarr.md), [Radarr](install-radarr.md), and [Lidarr](install-lidarr.md) are done on their respective wiki pages.
 
 ## 3. Enable AutoUnpack
 
 AutoUnpack is a plugin that will automatically unrar/unzip torrent data.
 
-_This will allow Sonarr/Radarr/Lidarr to import the media files that would otherwise be ignored. After Sonarr and Radarr import the media files, \[\[Torrent Cleanup Script\|Reference: Cloudbox-Tools\#torrent-cleanup-script\]\] will then delete the extracted media files and ruTorrent will continue to seed the torrents \(until they are either removed manually or automatically via ruTorrent's Ratio Group rules\)._
+_This will allow Sonarr/Radarr/Lidarr to import the media files that would otherwise be ignored. After Sonarr and Radarr import the media files,_ [_Torrent Cleanup Script_](../../reference/reference-cloudbox-tools.md#torrent-cleanup-script) _will then delete the extracted media files and ruTorrent will continue to seed the torrents \(until they are either removed manually or automatically via ruTorrent's Ratio Group rules\)._
 
 To enable AutoUnpack:
 
