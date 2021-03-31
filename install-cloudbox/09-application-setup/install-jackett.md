@@ -37,8 +37,8 @@ Under "Jackett Configuration":
 
 Under "Configured Indexers":
 
-1. Click "Add Indexer" to add your favorite indexers \(i.e. \[\[torrent trackers\|Prerequisites: Usenet vs BitTorrent\#ii-bittorrents\]\]\).
-2. When adding indexers into \[\[Sonarr\|Install: Sonarr\#jackett\]\]/\[\[Radarr\|Install: Radarr\#jackett\]\], you will need:
+1. Click "Add Indexer" to add your favorite indexers \(i.e. [torrent trackers](../../prerequisites/prerequisites-usenet-vs-bittorrent.md#ii-bittorrent)\).
+2. When adding indexers into [Sonarr](install-sonarr.md#jackett)/[Radarr](install-radarr.md#jackett)/[Lidarr](install-lidarr.md#jackett), you will need:
    1. Indexer's Torznab Feed
       * Copy this by clicking on "Copy Torznab Feed" button next to the Indexer.
       * You will need to replace...

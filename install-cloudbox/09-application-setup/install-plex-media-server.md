@@ -116,7 +116,7 @@
 
 In this section, we will add two libraries: one for Movies and one for TV.
 
-_Note: If you would like to have custom Plex libraries \(more than just a Movies and TV one\), see \[\[Customizing Plex Libraries\]\]._
+_Note: If you would like to have custom Plex libraries \(more than just a Movies and TV one\), see_ [_Customizing Plex Libraries_](../../unlinked-pages/customizing-plex-libraries.md)_._
 
 ### Add the Movie Library
 
@@ -183,7 +183,7 @@ _Note: If you would like to have custom Plex libraries \(more than just a Movies
 
 ## 5. Scan Media libraries
 
-As mentioned in the \[\[Introduction\|Basics: Introduction\#how-does-cloudbox-function-\]\] page, \[\[Plex Autoscan\| Install: Plex Autoscan\]\] will automatically scan the media files into Plex as they are downloaded, but this will require the Plex database to not be completely empty. So for every new library that is added, a one-time, manual scan is required.
+As mentioned in the [Introduction](../../basics/basics-introduction.md#how-does-cloudbox-function) page, [Plex Autoscan](install-plex-autoscan.md) will automatically scan the media files into Plex as they are downloaded, but this will require the Plex database to not be completely empty. So for every new library that is added, a one-time, manual scan is required.
 
 To do so:
 
@@ -196,7 +196,7 @@ To do so:
 
 ## 6. Webtools
 
-Webtools for Plex comes preinstalled. If you wish to setup Webtools and install 3rd party add-ons, you can go to [http://plex.\_yourdomain.com\_:33400](http://plex._yourdomain.com_:33400) \(http, not https\) and login with your Plex account.
+Webtools for Plex comes preinstalled. If you wish to setup Webtools and install 3rd party add-ons, you can go to http://plex.\_yourdomain.com\_:33400 \(**http, not https**\) and login with your Plex account.
 
-_Note: Use_ [http://\_yourserveripaddress](http://_yourserveripaddress):33400 if the above URL doesnt work.\_
+_Note: Use_ http://\_yourserveripaddress:33400 if the above URL doesnt work.\_
 

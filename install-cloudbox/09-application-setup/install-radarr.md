@@ -159,8 +159,8 @@ Desimaniac's Naming Guide
    2. Enable: `Yes`
    3. Host: `nzbget`
    4. Port: `6789`
-   5. Username: \[\[Your NZBGet Username\|Install: NZBGet\#security\]\]
-   6. Password: \[\[Your NZBGet Password\|Install: NZBGet\#security\]\]
+   5. Username: [Your NZBGet Username](install-nzbget.md#security)
+   6. Password: [Your NZBGet Password](install-nzbget.md#security)
    7. Category: `radarr`
    8. Use SSL: `No`
    9. Add Paused: `No`
@@ -180,8 +180,8 @@ Desimaniac's Naming Guide
    4. Port: `80`
    5. URL Path: `RPC2`
    6. Use SSL: `No`
-   7. Username: \[\[Your ruTorrent Username\|Install: ruTorrent\#login\]\]
-   8. Password: \[\[Your ruTorrent Password\|Install: ruTorrent\#login\]\]
+   7. Username: [Your ruTorrent Username](install-rutorrent.md#login)
+   8. Password: [Your ruTorrent Password](install-rutorrent.md#login)
    9. Category: `radarr`
    10. Directory: _Leave Blank_
 3. Your settings will now look like this:
@@ -194,7 +194,7 @@ Desimaniac's Naming Guide
 
 1. Go to "Settings" -&gt; "Indexers".
 2. Set "Advanced Settings": `Shown`
-3. Add in your your favorite \[\[indexers\|Prerequisites: Usenet vs BitTorrent\]\].
+3. Add in your your favorite [indexers](../../prerequisites/prerequisites-usenet-vs-bittorrent.md)
 
 #### NZBHydra2
 
@@ -206,7 +206,7 @@ Desimaniac's Naming Guide
    2. Enable RSS Sync: _Your Preference_
    3. Enable Search: _Your Preference_
    4. URL: `http://nzbhydra2:5076`
-   5. API Key: \[\[Your NZBHydra2 API Key\|Install: NZBHydra2\#4-api-key\]\]
+   5. API Key: [Your NZBHydra2 API Key](install-nzbhydra2.md#4-api-key)
    6. Additional Parameters: _Leave Blank_
 5. Your settings will look like this:
 
@@ -214,7 +214,7 @@ Desimaniac's Naming Guide
 
 6. Click "Save" to add NZBHydra2.
 
-Note: The "Test" will keep failing until you add an indexer in \[\[NZBHydra2\|Install: NZBHydra2\]\].
+Note: The "Test" will keep failing until you add an indexer in [NZBHydra2](install-nzbhydra2.md).
 
 #### Jackett
 
@@ -227,8 +227,8 @@ Note: Each Indexer will need to be added separately.
    1. Name: Indexer Name
    2. Enable RSS Sync: _Your Preference_
    3. Enable Search: _Your Preference_
-   4. URL: \[\[Indexer's Torznab Feed\|Install: Jackett\#3-adding-indexers-to-sonarrradarr\]\]
-   5. API Key: \[\[Your Jackett API Key\|Install: Jackett\#3-adding-indexers-to-sonarrradarr\]\]
+   4. URL: [Indexer's Torznab Feed](install-jackett.md#3-adding-indexers-to-sonarr-radarr)
+   5. API Key: [Your Jackett API Key](install-jackett.md#3-adding-indexers-to-sonarr-radarr)
    6. Additional Parameters: _Leave Blank_
 5. Your settings will look like this:
 
@@ -268,7 +268,7 @@ Torrent Cleanup Script is a custom script that will cleanup torrents from ruTorr
    4. On Upgrade: `Yes`
    5. On Rename: `Yes`
    6. Filter Movie Tags: _Leave Blank_
-   7. URL: \[\[Your Plex Autoscan URL\|Install: Plex-Autoscan\#4-obtaining-the-plex-autoscan-url\]\]
+   7. URL: [Your Plex Autoscan URL](install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url)
    8. Method:`POST`
    9. Username: _Leave Blank_
    10. Password: _Leave Blank_
@@ -287,7 +287,7 @@ Torrent Cleanup Script is a custom script that will cleanup torrents from ruTorr
 
 ### 4. API Key
 
-This is used during the setup of \[\[Ombi\|Install: Ombi\]\] and \[\[Organizr\|Install: Organizr\]\].
+This is used during the setup of [Ombi](install-ombi.md) and [Organizr](install-organizr.md).
 
 * Go to "Settings" -&gt; "General" -&gt; "Security" -&gt; "API Key".
 

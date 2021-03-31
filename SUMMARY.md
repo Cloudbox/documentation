@@ -63,7 +63,7 @@
 ## Backup and Restore
 
 * [Backup and Restore](backup-and-restore/cloudbox-backup-and-restore.md)
-* [Settings](backup-and-restore/cloudbox-backup-and-restore-settings.md)
+* [Backup/Restore Settings](backup-and-restore/cloudbox-backup-and-restore-settings.md)
 * [Scheduling](backup-and-restore/cloudbox-backup-and-restore-scheduling.md)
 * [Migrating Cloudbox](backup-and-restore/migrating-cloudbox.md)
 * [https://github.com/Cloudbox/Cloudbox/wiki/FAQ\#cloudbox-backup-and-restore](https://github.com/Cloudbox/Cloudbox/wiki/FAQ#cloudbox-backup-and-restore)

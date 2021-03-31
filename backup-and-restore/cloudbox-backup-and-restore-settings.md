@@ -1,4 +1,4 @@
-# Settings
+# Backup/Restore Settings
 
 Cloudbox Backup and Restore Settings are saved in the file `~/cloudbox/backup_config.yml`.
 

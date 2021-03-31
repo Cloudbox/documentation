@@ -100,8 +100,8 @@
    2. Enable: `Yes`
    3. Host: `nzbget`
    4. Port: `6789`
-   5. Username: \[\[Your NZBGet Username\|Install: NZBGet\#security\]\]
-   6. Password: \[\[Your NZBGet Password\|Install: NZBGet\#security\]\]
+   5. Username: [Your NZBGet Username](install-nzbget.md#security)
+   6. Password: [Your NZBGet Password](install-nzbget.md#security)
    7. Category: `lidarr`
    8. Use SSL: `No`
    9. Add Paused: `No`
@@ -121,8 +121,8 @@
    4. Port: `80`
    5. URL Path: `RPC2`
    6. Use SSL: `No`
-   7. Username: \[\[Your ruTorrent Username\|Install: ruTorrent\#login\]\]
-   8. Password: \[\[Your ruTorrent Password\|Install: ruTorrent\#login\]\]
+   7. Username: [Your ruTorrent Username](install-rutorrent.md#login)
+   8. Password: [Your ruTorrent Password](install-rutorrent.md#login)
    9. Category: `lidarr`
    10. Directory: _Leave Blank_
 3. Your settings will look like this:
@@ -135,7 +135,7 @@
 
 1. Go to "Settings" -&gt; "Indexers".
 2. Set "Advanced Settings": `Shown`
-3. Add in your your favorite \[\[indexers\|Prerequisites: Usenet vs BitTorrent\]\].
+3. Add in your your favorite [indexers](../../prerequisites/prerequisites-usenet-vs-bittorrent.md).
 
 #### NZBHydra2
 
@@ -148,7 +148,7 @@
    3. Enable Search: _Your Preference_
    4. URL: `http://nzbhydra2:5076`
    5. API Path: `/api`
-   6. API Key: \[\[Your NZBHydra2 API Key\|Install: NZBHydra2\#7-api-key\]\]
+   6. API Key: [Your NZBHydra2 API Key](install-nzbhydra2.md#4-api-key)
    7. Additional Parameters: _Leave Blank_
 5. Your settings will look like this:
 
@@ -156,7 +156,7 @@
 
 6. Click "Save" to add NZBHydra2.
 
-Note: The "Test" will keep failing until you add an indexer in \[\[NZBHydra2\|Install: NZBHydra2\]\].
+Note: The "Test" will keep failing until you add an indexer in [NZBHydra2](install-nzbhydra2.md).
 
 #### Jackett
 
@@ -202,24 +202,25 @@ Torrent Cleanup Script is a custom script that will cleanup torrents from ruTorr
 
 #### Plex Autoscan
 
-**Plex Autoscan no longers work with music libraries as of version 1.18, so this feature will not work.** 1. Click "Settings" -&gt; "Connect".
+**Plex Autoscan no longers work with music libraries as of version 1.18, so this feature will not work.** 
 
-1. Add a new "Webhook".
-2. Add the following:
+1. Click "Settings" -&gt; "Connect".
+2. Add a new "Webhook".
+3. Add the following:
    1. Name: Plex Autoscan
    2. On Grab: `No`
    3. On Download: `Yes`
    4. On Upgrade: `Yes`
    5. On Rename: `Yes`
-   6. URL: \[\[Your Plex Autoscan URL\|Install: Plex-Autoscan\#4-obtaining-the-plex-autoscan-url\]\]
+   6. URL: [Your Plex Autoscan URL](install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url)
    7. Method:`POST`
    8. Username: _Leave Blank_
    9. Password: _Leave Blank_
-3. The settings will look like this:
+4. The settings will look like this:
 
    ![Lidarr Plex Autoscan](https://i.imgur.com/58MCXxM.png)
 
-4. Click "Save" to add Plex Autoscan.
+5. Click "Save" to add Plex Autoscan.
 
 ### 4. Music Path
 
@@ -230,7 +231,7 @@ Torrent Cleanup Script is a custom script that will cleanup torrents from ruTorr
 
 ### 5. API Key
 
-This is used during the setup of \[\[Organizr\|Install: Organizr\]\].
+This is used during the setup of [Organizr](install-organizr.md).
 
 * Go to "Settings" -&gt; "General" -&gt; "Security" -&gt; "API Key".
 

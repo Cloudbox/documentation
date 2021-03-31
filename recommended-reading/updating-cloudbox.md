@@ -22,7 +22,7 @@ You can use this guide to keep up with new additions/changes with Cloudbox.
    cb update
    ```
 
-2. Run the Cloudbox installer with your preferred \[\[tag\|Basics:-Cloudbox-Install-Types\]\] \(`cloudbox`, `mediabox`, or `feederbox`\). Add any "non-default" roles onto the list of tags, separated by a comma.
+2. Run the Cloudbox installer with your preferred [tag](../basics/basics-cloudbox-install-types.md) \(`cloudbox`, `mediabox`, or `feederbox`\). Add any "non-default" roles onto the list of tags, separated by a comma.
 
    Examples:
 
@@ -34,7 +34,7 @@ You can use this guide to keep up with new additions/changes with Cloudbox.
    cb install cloudbox,emby,plexrequests
    ```
 
-   _Note: Install may quit if new changes were added into any of the `.yml` files \(e.g. `settings.yml`\) via the \[\[Settings Updater\]\] role. If this happens, check the the updated `.yml` file for the new additions and re-start the install._
+   _Note: Install may quit if new changes were added into any of the `.yml` files \(e.g. `settings.yml`\) via the_ [_Settings Updater_](settings-updater.md) _role. If this happens, check the the updated `.yml` file for the new additions and re-start the install._
 
 3. Reboot when the install completes.
 

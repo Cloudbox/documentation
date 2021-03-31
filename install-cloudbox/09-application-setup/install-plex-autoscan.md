@@ -11,11 +11,11 @@ _If you would like to learn more about what Plex Autoscan does and all the optio
 * For Plex Autoscan to work, at least one item needs to exist in each library before new items can show up.
 * If you already have media, simply add it to the library and do a manual scan within Plex, for each library you have, to build the DB.
 * If you currently don’t have any media, continue on with the setup, and when you have acquired some media, you will then perform a do a manual scan within Plex, for each library, to build the DB.
-* For more info, see \[\[this\|Install: Plex-Media-Server\#5-scan-media-libraries\]\].
+* For more info, see [this](install-plex-media-server.md#5-scan-media-libraries).
 
 ## 2. Add Your Plex Access Token into Plex Autoscan Config
 
-_You can skip this step if you entered in your Plex credentials in \[\[accounts.yml\|Install: accounts.yml\]\] during setup._
+_You can skip this step if you entered in your Plex credentials in_ [_accounts.yml_](../03-install-accounts.yml.md) _during setup._
 
 _Note: For Mediabox / Feederbox setups, the following will be done on the Mediabox._
 
@@ -40,7 +40,7 @@ _Note: For Mediabox / Feederbox setups, the following will be done on the Mediab
 
 _Note: For Mediabox / Feederbox setup, the following will be done on the Mediabox._
 
-The Plex Autoscan URL is needed during the setup of \[\[Sonarr\|Install: Sonarr\#plex-autoscan\]\], \[\[Radarr\|Install: Radarr\#plex-autoscan\]\], and \[\[Lidarr\|Install: Lidarr\#plex-autoscan\]\].
+The Plex Autoscan URL is needed during the setup of [Sonarr](install-sonarr.md#plex-autoscan), [Radarr](install-radarr.md#plex-autoscan), and [Lidarr](install-lidarr.md#plex-autoscan).
 
 To get your Plex Autoscan URL, run the following command:
 
@@ -78,7 +78,7 @@ _Note 4: The PAS URL is not meant to be accessed via a browser by default \(i.e.
 
 The following step is important so that Plex Autoscan can remove missing/replaced media files out of Plex \(i.e. empty trash\). Without it, Plex will be left with "unavailable" media that can't play \(i.e. media posters with trash icons on them\).
 
-For more details on what the control file is, see \[\[here\|FAQ\#purpose-of-a-control-file-in-plex-autoscan\]\].
+For more details on what the control file is, see [here](../../troubleshooting/faq-from-cb.md#purpose-of-a-control-file-in-plex-autoscan).
 
 To upload the mounted.bin control file, run the following command:
 

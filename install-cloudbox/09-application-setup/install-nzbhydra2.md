@@ -35,7 +35,7 @@ Enter setup by clicking on "Config" at the top.
 
 ### Authorization
 
-* Login settings are preset out of the box \(`user` / `passwd` as set in \[\[accounts.yml\|Install: Settings\]\]\).
+* Login settings are preset out of the box \(`user` / `passwd` as set in [accounts.yml](../03-install-accounts.yml.md).
 
 ### Migration
 
@@ -52,5 +52,5 @@ Enter setup by clicking on "Config" at the top.
 
 ## 4. API Key
 
-To find the NZBHydra2 API Key, go to "Config" --&gt; "Main". This will be used later in \[\[Sonarr\|Install: Sonarr\#nzbhydra2\]\] and \[\[Radarr\|Install: Radarr\#nzbhydra2\]\].
+To find the NZBHydra2 API Key, go to "Config" --&gt; "Main". This will be used later in [Sonarr](install-sonarr.md), [Radarr](install-radarr.md), and [Lidarr](install-lidarr.md).
 

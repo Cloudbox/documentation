@@ -1,6 +1,6 @@
 # cb utility script
 
-The Develop branch installs a helper script as `cb`.
+Cloudbox installs a helper script as `cb`.
 
 This script is intended to provide shortcuts for common tasks.
 
@@ -22,8 +22,12 @@ cb install SOMETAG
 instead of:
 
 ```text
-cd ~/cloudbox && sudo ansible-playbook cloudbox.yml --tags SOMETAG
+cd ~/cloudbox && sudo ansible-playbook cloudbox.yml --tags SOMETAG 
 ```
+
+{% hint style="info" %}
+`install` is simply a means of specifying a tag to run, so there are some situations where this is counterintuitive, like `cb install feeder_unmount`
+{% endhint %}
 
 Also:
 
@@ -37,7 +41,7 @@ instead of:
 cd ~/cloudbox && git fetch && git reset --hard @{u}
 ```
 
-You can run this helper from anywhere; you don't have to cd into the cloudbox directory first.
+**You can run this helper from anywhere**; you don't have to cd into the cloudbox directory first.
 
 ## "ArrX" functionality
 

@@ -4,28 +4,27 @@ The info below will show you how to update your Cloudbox apps, individually.
 
 ## Notes
 
-* To update Cloudbox as a whole \(i.e. the core part and all the default roles\), see \[\[Updating Cloudbox\]\].
-* Do not update the following apps within the app itself: Sonarr, Radarr, Lidarr, NZBGet, Ombi, Jackett, NZBHydra2, and Bazarr. If you do you may get the following error: `Update process failed: Cannot install update because startup folder '/app' is not writable by the user 'hotio'.`
+* To update Cloudbox as a whole \(i.e. the core and all the default roles\), see [Updating Cloudbox](updating-cloudbox.md).
+* Generally speaking, do not update the apps within the app itself.
 
 ## Update to a newer version
 
 | Cloudbox Apps | How to update |
 | :--- | :--- |
-| Plex | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| PlexPy/Tautulli | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| Plex AutoScan  [\[1\]](updating-cloudbox-apps.md#f1) | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| Sonarr | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| Radarr | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| NZBGet | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| ruTorrent | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| Jackett | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| NZBHydra2 | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| PlexRequests | Update within the app |
-| Ombi | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
+| Plex | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| PlexPy/Tautulli | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| Plex AutoScan | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) or `git` |
+| Sonarr | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| Radarr | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| NZBGet | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| ruTorrent | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| Jackett | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| NZBHydra2 | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| Ombi | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
 | Organizr | Update within the app |
-| Portainer | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| Cloudplow [\[1\]](updating-cloudbox-apps.md#f1) | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
-| Emby | [Ansible tag](https://github.com/Cloudbox/Cloudbox/wiki/Updating-Cloudbox-Apps#ansible-tags-to-update-apps) |
+| Portainer | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
+| Cloudplow | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) or `git` |
+| Emby | [Ansible tag](updating-cloudbox-apps.md#ansible-tags-to-update-apps) |
 
 **"How to update" options:**
 
@@ -53,6 +52,10 @@ The info below will show you how to update your Cloudbox apps, individually.
 
   _Note: It's recommended to use `docker stop/start <container>` vs `docker restart <container>`, to prevent corrupting data, especially on apps like ruTorrent._
 
+* **"git"**
+
+  You can also go into the `/opt/appname` folder and `git pull` the latest updates. Be sure to install the `requirements.txt` modules and then restart the service afterwards.
+
 ## Ansible tags to update apps
 
 When in doubt, you can always rerun the relevant Ansible tag to update the app.
@@ -67,7 +70,6 @@ When in doubt, you can always rerun the relevant Ansible tag to update the app.
 | ruTorrent | `rutorrent` |
 | Jackett | `jackett` |
 | NZBHydra2 | `nzbhydra2` |
-| Plex Requests - Meteor | `plexrequests` |
 | Ombi | `ombi` |
 | Organizr | `organizr` |
 | Portainer | `portainer` |
@@ -75,28 +77,6 @@ When in doubt, you can always rerun the relevant Ansible tag to update the app.
 | Nginx-Proxy and Letsencrypt | `nginx-proxy` |
 
 **Instructions:**
-
-_**Master branch**_
-
-1. Go to `~/cloudbox/`
-
-   ```text
-   cd ~/cloudbox
-   ```
-
-2. Run the tag command:
-
-   ```text
-   sudo ansible-playbook cloudbox.yml --tags TAG
-   ```
-
-   Replace `TAG` with one of the above tags from the table.
-
-   You can also run multiple tags, by placing them next to each other, separated by a comma, without spaces \(e.g. --tags TAG1,TAG2\).
-
-   _Note: If the App is a docker container, running the update tag will rebuild and update the container._
-
-_**Develop branch**_
 
 1. Run the tag command:
 
@@ -111,6 +91,4 @@ _**Develop branch**_
    _Note: If the App is a docker container, running the update tag will rebuild and update the container._
 
    _Note: If you modified the container with flags like `plex_name`, you'll need to do the same thing here._
-
-[**1**](updating-cloudbox-apps.md#a1) You can also go into the /opt/appname folder and `git pull` the latest updates. Be sure to install the requirements.txt modules and then restart the service after.
 

@@ -32,13 +32,6 @@ Now it's as if that app was never installed on this machine.
 Now you can reinstall the container using the standard cloudbox tag:
 
 ```text
-cd ~/cloudbox
-sudo ansible-playbook cloudbox.yml --tags TAG_GOES_HERE
-```
-
-or \[for develop branch\]
-
-```text
 cb install TAG_GOES_HERE
 ```
 
