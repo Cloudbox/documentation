@@ -2,7 +2,7 @@
 
 This will install the rest of Cloudbox.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 NOTE: You should NOT be logged into your server as `root` at this point. You should be logged in as the user you created/specified in the **[**preinstall**](05-preinstall.md)**.
 {% endhint %}
 
