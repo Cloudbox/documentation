@@ -16,7 +16,7 @@ To set this up:
    nano /opt/plex_autoscan/config/config.json
    ```
 
-2. Under the `GOOGLE` section of the config, enable Google Drive monitoring and fill in your \[\[Google Drive API Client ID and Secret\|Google-Drive-API-Client-ID-and-Client-Secret\]\].
+2. Under the `GOOGLE` section of the config, enable Google Drive monitoring and fill in your [Google Drive API Client ID and Secret](../unlinked-pages/google-drive-api-client-id-and-client-secret.md).
 
    ```javascript
     "ENABLED": true,
@@ -82,7 +82,7 @@ To set this up:
     },
    ```
 
-   Note: If you are using \[\[Scenario 2 Custom Library Setup\|Customizing Plex Libraries\#scenario-2\]\], you will need to tweak this section of the config.
+   Note: If you are using [Scenario 2: Custom Library Setup](../unlinked-pages/customizing-plex-libraries.md#scenario-2), you will need to tweak this section of the config.
 
 5. Save and Exit.
 6. Next, you will need to authorize Google Drive. To do so, run the following command:
@@ -98,7 +98,7 @@ To set this up:
     Enter authorization code:
    ```
 
-8. When access token retrieval is successfull, you'll see this:
+8. When access token retrieval is successful, you'll see this:
 
    ```text
    2018-06-24 05:57:58,252 -     INFO -    GDRIVE [140007964366656]: Requesting access token for auth code '4/AAAfPHmX9H_kMkMasfdsdfE4r8ImXI_BddbLF-eoCOPsdfasdfHBBzffKto'

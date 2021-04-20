@@ -75,15 +75,21 @@ Steps below assume you are restoring to a new / wiped server.
    NOTE: Wrap your USERNAME and PASSWORD in quotes just as shown there.  
   
    NOTE: These are not \[necessarily\] your login credentials. This is a username/password that **you have to enter yourself** in the backup\_config.yml file. **The Cloudbox install does not automatically fill these in**.   
-   If you did not fill these in yourself, then the Cloudbox Restore Service is _NOT_ enabled.
+  
+   **If you did not fill these in yourself**, then the Cloudbox Restore Service **is** _**NOT**_ **enabled**.
 
 3. If the Cloudbox Restore Service was not enabled \(i.e. `restore_service` credentials were NOT supplied in [backup\_config.yml](cloudbox-backup-and-restore-settings.md)\) 
    * Find the following files in your backup and drop them into the `~/cloudbox` folder:
-   * * * Note 1: These files were backed up separately from the backup tarball files so they can easily be copied here.
-   * * Note 2: During the restore process, the `rclone.conf` file will be moved to `~/.config/rclone/rclone.conf`.
-   * * Note 3: The `/opt` folder gets downloaded/restored automatically in the next step, and doesn’t require manual downloading or unpacking.
-   * 
-4. If you had Ansible Vault set up before, you'll need to create an \[\[Ansible Vault password file\|Install: Ansible-Vault\#password-file\]\] using the same vault password as last time.
+     * `ansible.cfg`
+     * `accounts.yml`
+     * `settings.yml`
+     * `adv_settings.yml`
+     * `backup_config.yml`
+     * `rclone.conf` 
+   * Note 1: These files were backed up separately from the backup tarball files so they can easily be copied here.
+   * Note 2: During the restore process, the `rclone.conf` file will be moved to `~/.config/rclone/rclone.conf`.
+   * Note 3: The `/opt` folder gets downloaded/restored automatically in the next step, and doesn’t require manual downloading or unpacking.
+4. If you had Ansible Vault set up before, you'll need to create an Ansible Vault password file using the same vault password as last time.
 
    ```bash
    echo YOUR_VAULT_PASSWORD > /root/.ansible_vault
@@ -91,11 +97,10 @@ Steps below assume you are restoring to a new / wiped server.
 
    of course, that should be your vault password, not literally YOUR\_VAULT\_PASSWORD.
 
-5. Run \[\[preinstall\|Install: Preinstall\]\] command to create a user account:
+5. Run [preinstall](../install-cloudbox/05-preinstall.md) command to create a user account:
 
    ```bash
-   cd ~/cloudbox
-   sudo ansible-playbook cloudbox.yml --tags preinstall
+   cb install preinstall
    ```
 
    _Note: It's ok to do this in root as it will create a new user account and move the cloudbox folder and config files to that new user's home folder._
@@ -107,8 +112,7 @@ Steps below assume you are restoring to a new / wiped server.
    _Note: Do not run this command while logged in as `root`. Log in as your user account; the account you specified in `accounts.yml`_
 
    ```bash
-   cd ~/cloudbox
-   sudo ansible-playbook cloudbox.yml --tags restore
+   cb install restore
    ```
 
    _Note: If you are getting an error, verify that you are not logged in as root. You should be logged in as the user account specified in `accounts.yml`.._
@@ -119,18 +123,18 @@ Steps below assume you are restoring to a new / wiped server.
 
    _If you get an error related to a misconfigured rclone.conf file, check that file and make sure things look normal. Also run rclone config to check that a remote has actually been configured._
 
-7. Install the relevant Cloudbox type: \[\[Cloudbox\|Install: Cloudbox\]\], \[\[Mediabox\|Install: Mediabox\]\], or \[\[Feederbox\|Install: Feederbox\]\]. Example below.
+7. Install the relevant [Cloudbox type](../basics/basics-cloudbox-install-types.md). Example below.
 
    _Note: Do not run this command while logged in as `root`. Log in as your user account; the account you specified in `accounts.yml`_
 
    Example:
 
    ```bash
-   sudo ansible-playbook cloudbox.yml --tags cloudbox
+   cb install cloudbox
    ```
 
 8. Reboot.
-9. If you had any extra, or non-default, containers previously \(e.g [Community Roles](https://github.com/Cloudbox/Community)\), you can install those now.
+9. If you had any extra, or non-default, containers previously \(e.g Community Roles\), you can install those now.
 
 All applications, and their data, will now be restored.
 

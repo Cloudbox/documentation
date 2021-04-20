@@ -21,15 +21,7 @@ You will need your Plex credentials filled in `~/cloudbox/accounts.yml`. If you 
    ```
 
 2. Open the file for editing:
-   * For encrypted `accounts.yml`:
-
-     ```bash
-     ansible-vault edit accounts.yml
-     ```
-
-   * For plain text `accounts.yml`:
-
-     ```bash
+   * ```bash
      nano accounts.yml
      ```
 3. Fill in your Plex credentials:
@@ -44,7 +36,7 @@ You will need your Plex credentials filled in `~/cloudbox/accounts.yml`. If you 
 5. Run the following command:
 
    ```text
-   sudo ansible-playbook cloudbox.yml --tags plex_auth_token
+   cb install plex_auth_token
    ```
 
 6. You will be shown your Plex Access Token in the log:

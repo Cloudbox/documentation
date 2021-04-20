@@ -1,6 +1,6 @@
 # Ansible Vault Primer
 
-This page is a primer on Ansible Vault and, as an example, it will take you through encrypting your \[\[accounts.yml\|Install: accounts.yml\]\] file as well.
+This page is a primer on Ansible Vault and, as an example, it will take you through encrypting your [accounts.yml ](../install-cloudbox/03-install-accounts.yml.md)file as well.
 
 ## Introduction
 
@@ -300,6 +300,6 @@ Each time a playbook is ran, the decryption will occur on-the-fly, but will rema
 Example:
 
 ```text
-sudo ansible-playbook cloudbox.yml --tags cloudbox
+cb install cloudbox
 ```
 

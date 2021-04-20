@@ -2,13 +2,13 @@
 
 Cloudbox Backup and Restore Settings are saved in the file `~/cloudbox/backup_config.yml`.
 
-## Location of backup\_config.yml \#\#
+## Location of backup\_config.yml
 
 ```text
 ~/cloudbox/backup_config.yml
 ```
 
-## Overview of backup\_config.yml \#\#
+## Overview of backup\_config.yml
 
 ```yaml
 ---
@@ -31,7 +31,7 @@ misc:
   snapshot: yes
 ```
 
-## Editing backup\_config.yml \#\#
+## Editing backup\_config.yml
 
 1. Go to the Cloudbox folder:
 
@@ -90,24 +90,23 @@ misc:
       * If you want cloudbox to **enable** automatic backups, enter `present`
       * If you want cloudbox to **disable** automatic backups, enter `absent`
       * Think of it as telling cloudbox "Leave automatic backups in this state."
-* **restore service**
-* Uploads config files to \[\[Cloudbox Restore Service\|FAQ\#what-is-cloudbox-restore-service\]\].
-* To enable, simply fill the login credentials you want to use.
-  * NOTE: These are 'credentials\` that _you are making up right now_; they do not need to \[and _should not_\] match any other user/pass \[like your cloudbox user/pass\].  They are used _only_ for the \[\[Cloudbox Restore Service\|FAQ\#what-is-cloudbox-restore-service\]\], and the only entity that uses them is _you_.
-* For more details, see \[\[here\|FAQ\#what-is-cloudbox-restore-service\]\].
-* `user`
-  * Username for Restore Service.
-  * Tip: Use something like `domain.com` or `feederbox.domain.com`/`mediabox.domain.com` for easy to remember username.
-  * Note: This username is hashed on the client-side and never sent to the Restore Service in raw format.
-* `pass`
-  * Password for Restore Service.
+* **restore\_service**
+  * Uploads config files to [Cloudbox Restore Service](../troubleshooting/faq-from-cb.md#what-is-cloudbox-restore-service).
+  * To enable, simply fill the login credentials you want to use.
+    * NOTE: These are 'credentials\` that _you are making up right now_; they do not need to \[and _should not_\] match any other user/pass \[like your cloudbox user/pass\].  They are used _only_ for the [Cloudbox Restore Service](../troubleshooting/faq-from-cb.md#what-is-cloudbox-restore-service), and the only entity that uses them is _you_.
+  * For more details, see [here](../troubleshooting/faq-from-cb.md#what-is-cloudbox-restore-service).
+  * `user`
+    * Username for Restore Service.
+    * Tip: Use something like `domain.com` or `feederbox.domain.com`/`mediabox.domain.com` for easy to remember username.
+    * Note: This username is hashed on the client-side and never sent to the Restore Service in raw format.
+  * `pass`
+    * Password for Restore Service.
 * **misc** 
-* Misc options.
-* `snapshot`
-  * Enable / Disable snapshot support.
-  * Benefit: Docker containers are only stopped for a short period of time while snapshots are made.
-  * Requires: BTRFS on `/opt` or `/`
-  * Options are `true` or `false`.
-  * Default is `true`.
-* \[\[HTML Page\|[https://htmlpreview.github.io/?https://cloudbox.works/wiki/backup\_config\_yml.html](https://htmlpreview.github.io/?https://cloudbox.works/wiki/backup_config_yml.html)\]\] \(better format\) &lt;-- coming soon
+  * Misc options.
+  * `snapshot`
+    * Enable / Disable snapshot support.
+    * Benefit: Docker containers are only stopped for a short period of time while snapshots are made.
+    * Requires: BTRFS on `/opt` or `/`
+    * Options are `true` or `false`.
+    * Default is `true`.
 
