@@ -74,7 +74,7 @@
 * [Plex Access Token](more-information/plex-access-token.md)
 * [Plex Autoscan Extras](more-information/plex-autoscan-extras.md)
 * [Pushover](more-information/pushover.md)
-* [\[\[Google Drive API Client ID and Client Secret\]\]](more-information/google-drive-api-client-id-and-client-secret.md)
+* [Google Drive API Client ID and Client Secret](more-information/google-drive-api-client-id-and-client-secret.md)
 * [Useful Docker Commands](more-information/useful-docker-commands.md)
 * [Add Your Own Docker Container into Cloudbox](more-information/add-your-own-docker-container-into-cloudbox.md)
 * [\[\[Revoking SSL Certificates\]\]](more-information/revoking-ssl-certificates.md)

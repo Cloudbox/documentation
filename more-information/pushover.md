@@ -85,14 +85,14 @@ Cloudplow can send notifications when it:
 
 To setup notifications, follow the steps below:
 
-1. Create a Pushover application for "Cloudplow" \(see Step 5 \[\[here\|Pushover\#pushover-setup\]\]\).
+1. Create a Pushover application for "Cloudplow" \(see Step 5 [here](pushover.md#pushover-setup)\).
 2. Edit the Cloudplow config.json file:
 
    ```text
     nano /opt/cloudplow/config.json
    ```
 
-3. Add the following notification section and type in your Pushover User Key and the Application Token \(from Step \#1\) within the quotes \(""\). Take a look at an example of this \[\[here\|Config: Cloudplow with Notifications Enabled\]\].
+3. Add the following notification section and type in your Pushover User Key and the Application Token \(from Step \#1\) within the quotes \(""\). Take a look at an example of this [here](../unlinked-pages/config-cloudplow-with-notifications-enabled.md).
 
    ```javascript
    "notifications": {
@@ -108,19 +108,21 @@ To setup notifications, follow the steps below:
 4. Ctrl+X Y Enter to save.
 5. Restart CP after changes: `sudo systemctl restart cloudplow`.
 
-## Plex Requests
+## ~~Plex Requests~~
 
-Pushover can send notifications whenever an event occurs in Plex Requests \(e.g. media is requested by someone\).
+**Needs to be replaced by Overseerr?**
 
-* Create a Pushover application for "Plex Requests" \(see Step 5 \[\[here\|Pushover\#pushover-setup\]\]\).
-* [Plex Requests](https://github.com/Cloudbox/gitbook/tree/4d7c0c5c8a2a3701c6b4104a930afe4866e08420/Plex-Requests/README.md#1-accessing-plex-requests) -&gt; Admin -&gt; Notifications -&gt; check "Enable Pushover notifications" and type in your Pushover User Key and the Application Token \(you can click the "Test Pushover" to check if it's working ok\) -&gt; Click "Update Settings".
+~~Pushover can send notifications whenever an event occurs in Plex Requests \(e.g. media is requested by someone\).~~
 
-## PlexPy
+* ~~Create a Pushover application for "Plex Requests" \(see Step 5 \[\[here\|Pushover\#pushover-setup\]\]\).~~
+* ~~~~[~~Plex Requests~~](https://github.com/Cloudbox/gitbook/tree/4d7c0c5c8a2a3701c6b4104a930afe4866e08420/Plex-Requests/README.md#1-accessing-plex-requests) ~~-&gt; Admin -&gt; Notifications -&gt; check "Enable Pushover notifications" and type in your Pushover User Key and the Application Token \(you can click the "Test Pushover" to check if it's working ok\) -&gt; Click "Update Settings".~~
+
+## Tautulli
 
 Pushover can send you notifications whenever an event occurs with Plex \(e.g. someone starts watching something, new media is added, etc\)
 
-1. Create a Pushover application for "PlexPy" \(see Step 5 \[\[here\|Pushover\#pushover-setup\]\]\).
-2. Enable notifications: \[\[PlexPy\|Install: PlexPy \(Tautulli\)\#1-accessing-plexpy\]\] -&gt; Settings -&gt; Notification Agents -&gt; Click the gray "bell" icon next to "Pushover" -&gt; and select when you want to be alerted -&gt; Click "close". The "bell" icon will turn yellow.
+1. Create a Pushover application for "Tautulli" \(see Step 5 [here](pushover.md#pushover-setup)\).
+2. Enable notifications: [PlexPy](../install-cloudbox/09-application-setup/plexpy-tautulli-install-plexpy-tautulli.md) -&gt; Settings -&gt; Notification Agents -&gt; Click the gray "bell" icon next to "Pushover" -&gt; and select when you want to be alerted -&gt; Click "close". The "bell" icon will turn yellow.
 3. Add in your Pushover info: Click the "gear" icon next to "Pushover" -&gt; Type in your Pushover User Key and the Application Token \(you can click the "Test Notification" to check if it's working ok\) -&gt; Click "Save".
 
 ## Sonarr and Radarr
