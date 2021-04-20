@@ -6,9 +6,13 @@ Setup instructions are separated based on the DNS Provider you use.
 
 Cloudbox will automatically add subdomain on Cloudflare and point it to the correct IP address.
 
-_Note 1: Make sure the Cloudflare API Key is filled in \[\[settings.yml\|Install: Settings\]\]\) and the e-mail address matches the one you have in your account profile._
+{% hint style="warning" %}
+_Make sure the Cloudflare API Key is filled in_ [_settings.yml_](../install-cloudbox/04-install-settings.yml.md)_\) and the e-mail address matches the one you have in your account profile._
+{% endhint %}
 
-_Note 2: There may be some subdomains that you have to add in yourself if Cloudbox doesn’t so it for you, such as the Cloudbox type ones \(eg `cloudbox`, `feederbox`, `mediabox`\)._
+{% hint style="warning" %}
+_There may be some subdomains that you have to add in yourself if Cloudbox doesn’t so it for you, such as the Cloudbox type ones \(eg `cloudbox`, `feederbox`, `mediabox`\)._
+{% endhint %}
 
 ## Other Domain Hosting Sites
 
@@ -18,7 +22,7 @@ _Note 2: There may be some subdomains that you have to add in yourself if Cloudb
 
 You don't need to do anything.
 
-#### Does Not Allow Wilcards
+#### Does Not Allow Wildcards
 
 You will need to add the subdomain via your domain's DNS provider's website.
 

@@ -1,5 +1,7 @@
 # Heimdall
 
+**MOVE TO COMMUNITY**
+
 1. [Intro](extras-heimdall.md#1-intro)
 2. [URL](extras-heimdall.md#2-url)
 3. [Initial Setup](extras-heimdall.md#3-initial-setup)

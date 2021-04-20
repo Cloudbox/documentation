@@ -1,4 +1,6 @@
-# NZBHydra v1
+# NZBHydra
+
+**UPDATE TO V2**
 
 1. [Introduction](extras-nzbhydra.md#1-introduction)
 2. [URL](extras-nzbhydra.md#2-url)

@@ -2,7 +2,7 @@
 
 * [Initial page](README.md)
 * [FAQ](faq.md)
-* [Untitled](untitled.md)
+* [formatting examples](untitled.md)
 
 ## Basics
 
@@ -74,11 +74,10 @@
 * [Plex Access Token](more-information/plex-access-token.md)
 * [Plex Autoscan Extras](more-information/plex-autoscan-extras.md)
 * [Pushover](more-information/pushover.md)
-* [Google Drive API Client ID and Client Secret](more-information/google-drive-api-client-id-and-client-secret.md)
+* [\[\[Google Drive API Client ID and Client Secret\]\]](more-information/google-drive-api-client-id-and-client-secret.md)
 * [Useful Docker Commands](more-information/useful-docker-commands.md)
 * [Add Your Own Docker Container into Cloudbox](more-information/add-your-own-docker-container-into-cloudbox.md)
 * [\[\[Revoking SSL Certificates\]\]](more-information/revoking-ssl-certificates.md)
-* [Feeder Mount](more-information/feeder-mount.md)
 * [Adding a Subdomain](more-information/adding-a-subdomain.md)
 * [\[\[HTTP Auth Support\|HTTP Auth Support\]\]](more-information/http-auth-support-or-http-auth-support.md)
 
@@ -98,8 +97,8 @@
 * [Resilio Sync](extras/extras-resilio-sync.md)
 * [Plex DupeFinder](extras/extras-plex-dupefinder.md)
 * [Heimdall](extras/extras-heimdall.md)
-* [NZBHydra v1](extras/extras-nzbhydra.md)
-* [Plex Requests](extras/extras-plex-requests.md)
+* [NZBHydra](extras/extras-nzbhydra.md)
+* [Overseerr](extras/extras-plex-requests.md)
 * [Sickbeard MP4 Automator](extras/extra-sickbeard-mp4-automator.md)
 * [SABnzbd](extras/extras-sabnzbd.md)
 * [Traktarr](extras/extras-traktarr.md)

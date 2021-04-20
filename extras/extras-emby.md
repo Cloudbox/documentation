@@ -28,19 +28,15 @@
 
 ### i. Domain
 
-* See \[\[Adding a Subdomain\|Adding a Subdomain\]\] on how to add the subdomain `emby` to your DNS provider.
-* _Note: You can skip this step if you are using \[\[Cloudflare\|Prerequisites: Cloudflare\]\] with Cloudbox._
+* See [Adding a Subdomain](../more-information/adding-a-subdomain.md) for details on how to add the subdomain `emby` to your DNS provider.
+* _Note: You can skip this step if you are using_ [_Cloudflare_](../prerequisites/prerequisites-cloudflare.md) _with Cloudbox._
 
 ### ii. Install
 
 * Run the following commands:
 
   ```bash
-  cd ~/cloudbox/
-  ```
-
-  ```bash
-  sudo ansible-playbook cloudbox.yml --tags emby
+  cb install emby
   ```
 
 ## 4. Setup Wizard
@@ -149,7 +145,7 @@ In this section, we will add two libraries: one for Movies and one for TV Shows.
 5. Click **+** next to **Folders**.
 6. Type in or choose `/data/Movies`. Click **OK**.
 
-   _Note: These \[\[paths\|Basics: Cloudbox Paths\]\] are for the standard library setup. If you have \[\[customized\|Customizing-Plex-Libraries\]\] it, use those paths instead._
+   _Note: These_ [_paths_](../basics/basics-cloudbox-paths.md) _are for the standard library setup. If you have_ [_customized_](../unlinked-pages/customizing-plex-libraries.md) _it, use those paths instead._
 
    ![](https://i.imgur.com/UiXspBL.png)
 
@@ -174,7 +170,9 @@ In this section, we will add two libraries: one for Movies and one for TV Shows.
 5. Click **+** next to **Folders**.
 6. Type in or choose `/data/TV`. Click **OK**.
 
-   _Note: These \[\[paths\|Basics: Cloudbox Paths\]\] are for the standard library setup. If you have \[\[customized\|Customizing-Plex-Libraries\]\] it, use those paths instead._
+   _Note: These_ [_paths_](../basics/basics-cloudbox-paths.md) _are for the standard library setup. If you have_ [_customized_](../unlinked-pages/customizing-plex-libraries.md) _it, use those paths instead._
+
+
 
    ![](https://i.imgur.com/shR8IZB.png)
 

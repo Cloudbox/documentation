@@ -1,5 +1,7 @@
 # Nextcloud
 
+**MOVE TO COMMUNITY**
+
 1. [Introduction](extras-nextcloud.md#1-introduction)
 2. [URL](extras-nextcloud.md#2-url)
 3. [Initial Setup](extras-nextcloud.md#3-initial-setup)

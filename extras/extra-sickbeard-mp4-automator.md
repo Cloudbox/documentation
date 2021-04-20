@@ -1,5 +1,7 @@
 # Sickbeard MP4 Automator
 
+**MOVE TO ADVANCED?  NO MORE TAG**
+
 1. [Introduction](extra-sickbeard-mp4-automator.md#1-introduction)
 2. [Overview](extra-sickbeard-mp4-automator.md#2-overview)
 3. [Initial Setup](extra-sickbeard-mp4-automator.md#3-initial-setup)

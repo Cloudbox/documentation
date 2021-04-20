@@ -100,9 +100,9 @@ docker exec letsencrypt /app/force_renew
 
 ### Watchtower
 
-Tool to automaticaly update Docker images and containers.
+Tool to automatically update Docker images and containers.
 
-Note: We recommend you manually update the docker images and containers via their \[\[Ansible tags\|Updating Cloudbox Apps\]\]. Updating Docker containers with Watchtower has been known to cause data corruption. So use at your own risk.
+Note: We recommend you manually update the docker images and containers via their [Ansible tags](../recommended-reading/updating-cloudbox-apps.md). Updating Docker containers with Watchtower has been known to cause data corruption. So use at your own risk.
 
 ```text
 docker start watchtower && docker logs -f watchtower

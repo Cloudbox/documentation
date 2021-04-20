@@ -42,8 +42,7 @@ Demo:
 Run the following commands:
 
 ```bash
-  cd ~/cloudbox/
-  sudo ansible-playbook cloudbox.yml --tags plex_dupefinder
+cb install plex_dupefinder
 ```
 
 ## 3. Config
@@ -155,7 +154,6 @@ Run the following commands:
   ```
 
 * This option has a very limited use case, i.e. in instances where Plex may have glitched and created multiple duplicates of the same media item.
-* If using this setting, we recommend using UnionFS-Fuse that can generate whiteout files \(`*_HIDDEN~`\) to prevent the deletion of the actual file on the system. The `_HIDDEN~` files can then be removed afterwards or even during the dupe cleanup \(e.g. `watch -n 5 rm -rf /mnt/local/.unionfs-fuse/*`\).
 * The default settings should be sufficient for most.
 
 #### Filename Scores

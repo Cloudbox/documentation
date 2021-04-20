@@ -1,5 +1,7 @@
 # Resilio Sync
 
+**MOVE TO COMMUNITY**
+
 1. [Introduction](extras-resilio-sync.md#1-introduction)
 2. [URL](extras-resilio-sync.md#2-url)
 3. [Initial Setup](extras-resilio-sync.md#3-initial-setup)

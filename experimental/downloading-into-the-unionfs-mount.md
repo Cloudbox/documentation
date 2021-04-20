@@ -1,5 +1,7 @@
 # Downloading into the unionfs mount
 
+**INCORPORATE THIS INTO APP SETUP PAGES**
+
 This page will show you how setup Cloudbox so that it downloads into /mnt/unionfs/ and allows for instant moves from downloads to media folder.
 
 **Details:**
