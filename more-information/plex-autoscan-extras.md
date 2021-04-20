@@ -130,7 +130,7 @@ Setup instructions:
    "SERVER_ALLOW_MANUAL_SCAN": true,
    ```
 
-2. Visit your \[\[Plex Autoscan URL\|Install: Plex-Autoscan\#4-obtaining-the-plex-autoscan-url\]\] webpage.
+2. Visit your [Plex Autoscan URL](../install-cloudbox/09-application-setup/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) webpage.
 3. Enter in the path to scan.
 
    _Note: The path can be in any form \(e.g. `/data/Media/...`, `/mnt/unionfs/Media/...`, `My Drive/Media/....`\). The 'Server Path Mappings' will redirect the scan to the correct location._
@@ -161,9 +161,9 @@ Setup instructions:
 
 3. The request will now show up under Plex Autoscan logs.
 
-For more details on both options, see \[\[here\|[https://github.com/l3uddz/plex\_autoscan\#misc](https://github.com/l3uddz/plex_autoscan#misc)\]\].
+For more details on both options, see [here](https://github.com/l3uddz/plex_autoscan#misc).
 
-### CLI
+### CLI \[direct to Plex\]
 
 _Note 1: This is only done on the box where Plex is installed._
 
@@ -173,7 +173,7 @@ _Note 3: This method does not use Plex Autoscan, and therefore, Plex will immedi
 
 #### Command
 
-_Note: Replace `<section ID>` \(\[\[Plex Library Section IDs\]\]\) and `<plex library's movie/tv show path>` with yours._
+_Note: Replace `<section ID>` \(_[_Plex Library Section IDs_](../unlinked-pages/plex-library-section-ids.md)_\) and `<plex library's movie/tv show path>` with yours._
 
 ```text
 docker exec -u plex -i plex bash -c 'export LD_LIBRARY_PATH=/usr/lib/plexmediaserver/lib;/usr/lib/plexmediaserver/Plex\ Media\ Scanner --scan --refresh --section <section ID> --directory '"'"'<movie or tv show path>'"'"''

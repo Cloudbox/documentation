@@ -51,22 +51,16 @@ Listed below are the things you'll need from Pushover's site.
 
 To have Pushover send you alerts every time a Cloudbox backup task starts and finishes, follow to steps below.
 
-1. Create a Pushover application for "Cloudbox Backup" \(see Step 5 \[\[here\|Pushover\#pushover-setup\]\]\).
+1. Create a Pushover application for "Cloudbox Backup" \(see Step 5 [here](pushover.md#pushover-setup)\).
 
    _Tip: If you have a Mediabox/Feederbox setup, you can create 2 different applications within Pushover specify "Mediabox Backup" and "Feederbox Backup" as their names._
 
 2. Open the `accounts.yml` file.
-   * For encrypted `accounts.yml`:
 
-     ```bash
-     ansible-vault edit accounts.yml
-     ```
+   ```bash
+   nano accounts.yml
+   ```
 
-   * For plain text `accounts.yml`:
-
-     ```bash
-     nano accounts.yml
-     ```
 3. Type in your Pushover User Key and the Application Token \(from Step \#1\) under "pushover" \(without quotes\).
 
    ```yaml
