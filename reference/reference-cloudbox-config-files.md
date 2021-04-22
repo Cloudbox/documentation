@@ -4,8 +4,8 @@ Find a list of default/sample config files so you can reference them in case you
 
 You can also find these on the Github Repo or in your Cloudbox project files.
 
-* \[\[Cloudplow\|Config:-Cloudplow\]\]
-* \[\[NZBGet\|NZBGet Config\]\]
-* \[\[ruTorrent\|Config: ruTorrent\]\]
-* \[\[Plex Autoscan\|Config: Plex Autoscan\]\]
+* [Cloudplow](../unlinked-pages/config-cloudplow.md)
+* [NZBGet](../unlinked-pages/nzbget-config.md)
+* [ruTorrent](../unlinked-pages/config-rutorrent.md)
+* [Plex Autoscan](../unlinked-pages/config-plex-autoscan.md)
 

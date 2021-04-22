@@ -1,5 +1,7 @@
 # SABnzbd
 
+**NEEDS MORE DETAIL AND SCREENSHOTS**
+
 &lt; Rough guide &gt;
 
 * Install tag: `--tags sabnzbd`

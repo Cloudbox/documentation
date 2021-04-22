@@ -11,7 +11,7 @@ sudo ansible-playbook cloudbox.yml --list-tags 2>&1 | grep "TASK TAGS" | cut -d"
 ## Command
 
 ```text
-sudo ansible-playbook cloudbox.yml --tags <TAG>
+cb install <TAG>
 ```
 
 ## Major Tags

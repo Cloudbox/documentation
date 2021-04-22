@@ -77,7 +77,7 @@ misc:
     * Enable/disable Rsync backups.
     * Options are `yes` or `no`.
     * Default is `no`.
-  * `desination`
+  * `destination`
     * Path for Rsync backups. Only the most recent backup is kept.
 * **cron**
   * `cron_time`

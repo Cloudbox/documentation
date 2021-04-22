@@ -18,7 +18,6 @@
 | PlexRequests |  |  |
 | Portainer |  |  |
 | Radarr |  |  |
-| Resilio Sync | 55555 |  |
 | ruTorrent | 6881 \(UDP\), 51413 |  |
 | Sonarr |  |  |
 | Cloudplow |  |  |

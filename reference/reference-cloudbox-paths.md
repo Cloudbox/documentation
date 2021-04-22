@@ -5,8 +5,6 @@ List of paths.
 | Apps | Path |
 | :--- | :--- |
 | Plex | `/opt/plex/` |
-| PlexPy | `/opt/plexpy/` |
-| Plex Requests | `/opt/plexrequests/` |
 | Sonarr | `/opt/sonarr/` |
 | Radarr | `/opt/radarr/` |
 | NZBGet | `/opt/nzbget/` |
