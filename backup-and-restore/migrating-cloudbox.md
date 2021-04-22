@@ -9,7 +9,6 @@ Listed below are some common scenarios and their migration instructions.
 ### Previous Server
 
 1. [Backup](cloudbox-backup-and-restore.md#cloudbox-backup) your current Cloudbox server.
-2. [Backup](cloudbox-backup-and-restore.md#cloudbox-backup) your current Cloudbox server.
 
 ### New Server
 
