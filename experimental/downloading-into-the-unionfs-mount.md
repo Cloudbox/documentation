@@ -1,6 +1,8 @@
 # Downloading into the unionfs mount
 
-**INCORPORATE THIS INTO APP SETUP PAGES**
+## TODO: INCORPORATE THIS INTO APP SETUP PAGES
+
+WARNINGS ONLY APPLY TO UNIONFS BINARY
 
 This page will show you how setup Cloudbox so that it downloads into /mnt/unionfs/ and allows for instant moves from downloads to media folder.
 
@@ -29,7 +31,7 @@ Cloudbox has used `mergerfs` as the default for quite some time now.
    | Destdir | `${MainDir}/completed` |
    | Interdir | `${MainDir}/intermediate` |
 
-_Note: This assumes your NZB downloads folder was set to `/mnt/local/downloads/nzbs` during the \[\[initial setup\|Install: Settings\]\]._
+_Note: This assumes your NZB downloads folder was set to `/mnt/local/downloads/nzbs` during the_ [_initial setup_](../install-cloudbox/04-install-settings.yml.md)_._
 
 ## ruTorrent
 

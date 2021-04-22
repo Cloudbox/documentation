@@ -1,4 +1,6 @@
-# Google-Drive-API-Client-ID-and-Client-Secret.md
+# Google Drive API: Client ID and Client Secret
+
+## TODO: REPLACE SCREENSHOTS
 
 The following guide will show you how to get a Google Drive API Client ID and Client Secret.
 

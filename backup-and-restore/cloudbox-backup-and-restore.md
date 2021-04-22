@@ -13,14 +13,16 @@ _Only app data located in '/opt' and relevant config files are backed up. For mo
 {% endhint %}
 
 {% hint style="info" %}
-_If you wish to move your Cloudbox to another server via Backup / Restore, see_ [_Migrating Cloudbox_](../recommended-reading/migrating-cloudbox.md)_._
+_If you wish to move your Cloudbox to another server via Backup / Restore, see_ [_Migrating Cloudbox_]()_._
 {% endhint %}
 
 ## Cloudbox Backup
 
 **Cloudbox Backup** backs up the Docker container app data \(i.e. `/opt`\), and all relevant config files, and uploads it to an Rclone or Rsync remote \(if they are enabled\).
 
-Backup can be ran manually \(steps below\), for an immediate, one-time backup, or \[\[scheduled\|Cloudbox Backup and Restore Scheduling\]\] to run periodically.
+[What is backed up?](../troubleshooting/faq-from-cb.md#what-is-backed-up)
+
+Backup can be run manually \(steps below\), for an immediate, one-time backup, or [scheduled](cloudbox-backup-and-restore-scheduling.md) to run periodically.
 
 {% hint style="info" %}
 _During backup, all Cloudbox managed Docker containers will be shut down \(i.e. Plex will be unavailable\) while the tarball files are being made._
@@ -38,15 +40,9 @@ Steps to run a manual backup:
    via screen:
 
 ```text
-   screen -dmS cloudbox-backup cb install backup
-```
-
-```text
-   screen -r
-```
-
-```text
-   CTRL A + D
+screen -dmS cloudbox-backup cb install backup
+screen -r
+CTRL A + D
 ```
 
 For scheduled backups, see [here](cloudbox-backup-and-restore-settings.md).
@@ -59,7 +55,7 @@ If for some reason your backup stops/ you accidentally reboot the server etc.: Y
 
 If a local backup \(e.g. `/opt` tarball files\) already exists in the backup folder, those tarball files will be used instead.
 
-Backup can be restored on the same server or brand new one, with everything exactly as you left it at the time of backup. See [Migrating Cloudbox](../recommended-reading/migrating-cloudbox.md) for more info.
+Backup can be restored on the same server or brand new one, with everything exactly as you left it at the time of backup. See [Migrating Cloudbox](migrating-cloudbox.md) for more info.
 
 Steps below assume you are restoring to a new / wiped server.
 

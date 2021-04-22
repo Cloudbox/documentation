@@ -1,8 +1,8 @@
-# Customizing-Plex-Libraries.md
+# Customizing Plex Libraries
 
-* [Intro](customizing-plex-libraries.md#intro)
-* [Scenario 1](customizing-plex-libraries.md#scenario-1) \(recommended\)
-* [Scenario 2](customizing-plex-libraries.md#scenario-2)
+* [Intro](customizing-plex-libraries-1.md#intro)
+* [Scenario 1](customizing-plex-libraries-1.md#scenario-1) \(recommended\)
+* [Scenario 2](customizing-plex-libraries-1.md#scenario-2)
 
 ## Intro
 
@@ -29,12 +29,12 @@ But regardless of whatever scenario you choose below, the media folders will ALW
 
 ### Scenarios
 
-* Adding folders \(i.e. libraries\) directly under `Media/Movies/` \(or `Media/TV/`\) \(i.e. the standard paths\) → [Scenario 1](customizing-plex-libraries.md#scenario-1). This is the recommended option.
-* Adding folders \(i.e. libraries\) directly under `Media/` → [Scenario 2](customizing-plex-libraries.md#scenario-2).
+* Adding folders \(i.e. libraries\) directly under `Media/Movies/` \(or `Media/TV/`\) \(i.e. the standard paths\) → [Scenario 1](customizing-plex-libraries-1.md#scenario-1). This is the recommended option.
+* Adding folders \(i.e. libraries\) directly under `Media/` → [Scenario 2](customizing-plex-libraries-1.md#scenario-2).
 
 ### Example
 
-Here is a simplified version of my library setup, which is based on [Scenario 1](customizing-plex-libraries.md#scenario-1).
+Here is a simplified version of my library setup, which is based on [Scenario 1](customizing-plex-libraries-1.md#scenario-1).
 
 ```text
  Media

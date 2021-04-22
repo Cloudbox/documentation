@@ -1,6 +1,6 @@
 # Ombi
 
-## work in progress - redoing parts of this page and simplifying steps
+## TODO: REPLACE WITH OVERSEERR
 
 1. [URL](install-ombi.md#1-url)
 2. [Initial Setup](install-ombi.md#2-initial-setup)

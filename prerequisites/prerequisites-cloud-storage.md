@@ -31,5 +31,5 @@ Note 1: For Google Drive, you can use the [Shift-Z trick](https://www.labnol.org
 
 Note 2: All the paths/folders mentioned here, and elsewhere, are **CASE SENSITIVE** \(see [Cloudbox Paths](../basics/basics-cloudbox-paths.md)\).
 
- [1](prerequisites-cloud-storage.md#note1ref) If you would like to customize your Plex libraries beyond what is listed above, see [Customizing Plex Libraries](../unlinked-pages/customizing-plex-libraries.md).
+ [1](prerequisites-cloud-storage.md#note1ref) If you would like to customize your Plex libraries beyond what is listed above, see [Customizing Plex Libraries](../advanced-configuration/customizing-plex-libraries-1.md).
 

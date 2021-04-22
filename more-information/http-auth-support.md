@@ -1,4 +1,4 @@
-# HTTP-Auth-Support.md
+# HTTP Auth Support
 
 The following guide allows setting up basic HTTP authentication for any subdomain. You can use this to secure Docker web apps that don't have native login support.
 

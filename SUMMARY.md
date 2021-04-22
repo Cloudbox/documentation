@@ -3,6 +3,7 @@
 * [Initial page](README.md)
 * [FAQ](faq.md)
 * [formatting examples](untitled.md)
+* [PLACEHOLDER PAGE](placeholder-page.md)
 
 ## Basics
 
@@ -57,7 +58,6 @@
 * [Updating Cloudbox](recommended-reading/updating-cloudbox.md)
 * [Updating Cloudbox Apps](recommended-reading/updating-cloudbox-apps.md)
 * [Removing Cloudbox Apps](recommended-reading/removing-cloudbox-apps.md)
-* [Migrating Cloudbox](recommended-reading/migrating-cloudbox.md)
 * [Settings Updater](recommended-reading/settings-updater.md)
 
 ## Backup and Restore
@@ -66,7 +66,6 @@
 * [Backup/Restore Settings](backup-and-restore/cloudbox-backup-and-restore-settings.md)
 * [Scheduling](backup-and-restore/cloudbox-backup-and-restore-scheduling.md)
 * [Migrating Cloudbox](backup-and-restore/migrating-cloudbox.md)
-* [https://github.com/Cloudbox/Cloudbox/wiki/FAQ\#cloudbox-backup-and-restore](https://github.com/Cloudbox/Cloudbox/wiki/FAQ#cloudbox-backup-and-restore)
 
 ## More Information
 
@@ -74,17 +73,17 @@
 * [Plex Access Token](more-information/plex-access-token.md)
 * [Plex Autoscan Extras](more-information/plex-autoscan-extras.md)
 * [Pushover](more-information/pushover.md)
-* [\[\[Google Drive API Client ID and Client Secret\]\]](more-information/google-drive-api-client-id-and-client-secret.md)
+* [Google Drive API: Client ID and Client Secret](more-information/google-drive-api-client-id-and-client-secret-1.md)
 * [Useful Docker Commands](more-information/useful-docker-commands.md)
 * [Add Your Own Docker Container into Cloudbox](more-information/add-your-own-docker-container-into-cloudbox.md)
-* [\[\[Revoking SSL Certificates\]\]](more-information/revoking-ssl-certificates.md)
+* [Revoking SSL Certificates](more-information/revoking-ssl-certificates.md)
 * [Adding a Subdomain](more-information/adding-a-subdomain.md)
-* [\[\[HTTP Auth Support\|HTTP Auth Support\]\]](more-information/http-auth-support-or-http-auth-support.md)
+* [HTTP Auth Support](more-information/http-auth-support.md)
 
 ## Advanced Configuration
 
-* [\[\[Customizing Plex Libraries\]\]](advanced-configuration/customizing-plex-libraries.md)
-* [adv\_settings.yml](advanced-configuration/adv_settings.yml.md)
+* [Customizing Plex Libraries](advanced-configuration/customizing-plex-libraries-1.md)
+* [Advanced Settings](advanced-configuration/adv_settings.yml.md)
 
 ## Experimental
 
@@ -98,7 +97,6 @@
 * [Plex DupeFinder](extras/extras-plex-dupefinder.md)
 * [Heimdall](extras/extras-heimdall.md)
 * [NZBHydra](extras/extras-nzbhydra.md)
-* [Overseerr](extras/extras-plex-requests.md)
 * [Sickbeard MP4 Automator](extras/extra-sickbeard-mp4-automator.md)
 * [SABnzbd](extras/extras-sabnzbd.md)
 * [Traktarr](extras/extras-traktarr.md)
@@ -152,13 +150,10 @@
 * [\[Config-ruTorrent-\(old-paths\).md\]\(Config-ruTorrent-\(old-paths\).md\)](unlinked-pages/config-rutorrent-old-paths-.md-config-rutorrent-old-paths-.md.md)
 * [Config-ruTorrent.md](unlinked-pages/config-rutorrent.md)
 * [Config-UnionFS-Cleaner.md](unlinked-pages/config-unionfs-cleaner.md)
-* [Customizing-Plex-Libraries.md](unlinked-pages/customizing-plex-libraries.md)
 * [Debian.md](unlinked-pages/debian.md)
 * [DELETED-Install-Kernel.md](unlinked-pages/deleted-install-kernel.md)
 * [DELETED-UnionFS-Cleaner.md](unlinked-pages/deleted-unionfs-cleaner.md)
 * [G.md](unlinked-pages/g.md)
-* [Google-Drive-API-Client-ID-and-Client-Secret.md](unlinked-pages/google-drive-api-client-id-and-client-secret.md)
-* [HTTP-Auth-Support.md](unlinked-pages/http-auth-support.md)
 * [Install-Plexdrive-4.md](unlinked-pages/install-plexdrive-4.md)
 * [Install-Plexdrive-5.md](unlinked-pages/install-plexdrive-5.md)
 * [Install-Settings.md](unlinked-pages/install-settings.md)

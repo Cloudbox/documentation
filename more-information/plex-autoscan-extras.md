@@ -16,7 +16,7 @@ To set this up:
    nano /opt/plex_autoscan/config/config.json
    ```
 
-2. Under the `GOOGLE` section of the config, enable Google Drive monitoring and fill in your [Google Drive API Client ID and Secret](../unlinked-pages/google-drive-api-client-id-and-client-secret.md).
+2. Under the `GOOGLE` section of the config, enable Google Drive monitoring and fill in your [Google Drive API Client ID and Secret](google-drive-api-client-id-and-client-secret-1.md).
 
    ```javascript
     "ENABLED": true,
@@ -82,7 +82,7 @@ To set this up:
     },
    ```
 
-   Note: If you are using [Scenario 2: Custom Library Setup](../unlinked-pages/customizing-plex-libraries.md#scenario-2), you will need to tweak this section of the config.
+   Note: If you are using [Scenario 2: Custom Library Setup](../advanced-configuration/customizing-plex-libraries-1.md#scenario-2), you will need to tweak this section of the config.
 
 5. Save and Exit.
 6. Next, you will need to authorize Google Drive. To do so, run the following command:

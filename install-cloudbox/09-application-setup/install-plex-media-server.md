@@ -116,7 +116,7 @@
 
 In this section, we will add two libraries: one for Movies and one for TV.
 
-_Note: If you would like to have custom Plex libraries \(more than just a Movies and TV one\), see_ [_Customizing Plex Libraries_](../../unlinked-pages/customizing-plex-libraries.md)_._
+_Note: If you would like to have custom Plex libraries \(more than just a Movies and TV one\), see_ [_Customizing Plex Libraries_](../../advanced-configuration/customizing-plex-libraries-1.md)_._
 
 ### Add the Movie Library
 

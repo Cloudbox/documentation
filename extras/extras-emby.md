@@ -145,7 +145,7 @@ In this section, we will add two libraries: one for Movies and one for TV Shows.
 5. Click **+** next to **Folders**.
 6. Type in or choose `/data/Movies`. Click **OK**.
 
-   _Note: These_ [_paths_](../basics/basics-cloudbox-paths.md) _are for the standard library setup. If you have_ [_customized_](../unlinked-pages/customizing-plex-libraries.md) _it, use those paths instead._
+   _Note: These_ [_paths_](../basics/basics-cloudbox-paths.md) _are for the standard library setup. If you have_ [_customized_](../advanced-configuration/customizing-plex-libraries-1.md) _it, use those paths instead._
 
    ![](https://i.imgur.com/UiXspBL.png)
 
@@ -170,7 +170,7 @@ In this section, we will add two libraries: one for Movies and one for TV Shows.
 5. Click **+** next to **Folders**.
 6. Type in or choose `/data/TV`. Click **OK**.
 
-   _Note: These_ [_paths_](../basics/basics-cloudbox-paths.md) _are for the standard library setup. If you have_ [_customized_](../unlinked-pages/customizing-plex-libraries.md) _it, use those paths instead._
+   _Note: These_ [_paths_](../basics/basics-cloudbox-paths.md) _are for the standard library setup. If you have_ [_customized_](../advanced-configuration/customizing-plex-libraries-1.md) _it, use those paths instead._
 
 
 

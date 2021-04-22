@@ -31,7 +31,11 @@ Enter a password for the user.  Don't leave it blank. Even if you are planning t
 {% endhint %}
 
 {% hint style="info" %}
-This is a YAML file, and is subject to standard YAML format rules.  Google can help if you are unfamiliar with this format.
+This is a YAML file, and is subject to standard YAML format rules.    
+  
+Generally, use only letters and numbers.  If you use something other than those, wrap the value in double-quotes \[and don't use a double-quote within it\].   More details [here](../placeholder-page.md).
+
+Google can help if you are unfamiliar with this format.
 {% endhint %}
 
 ## Editing accounts.yml
