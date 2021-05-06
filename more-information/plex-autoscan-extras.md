@@ -130,7 +130,7 @@ Setup instructions:
    "SERVER_ALLOW_MANUAL_SCAN": true,
    ```
 
-2. Visit your [Plex Autoscan URL](../install-cloudbox/09-application-setup/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) webpage.
+2. Visit your [Plex Autoscan URL](../install-cloudbox/09-application-setup/media-server/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) webpage.
 3. Enter in the path to scan.
 
    _Note: The path can be in any form \(e.g. `/data/Media/...`, `/mnt/unionfs/Media/...`, `My Drive/Media/....`\). The 'Server Path Mappings' will redirect the scan to the correct location._

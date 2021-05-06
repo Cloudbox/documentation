@@ -17,7 +17,7 @@ Listed below are some common scenarios and their migration instructions.
    * Point your domain's [DNS](../prerequisites/prerequisites-domain-name.md#2-dns-setup) to the new server.
 3. Install the relevant [Cloudbox type](../basics/basics-cloudbox-install-types.md): \(step \#7 of the [Restore](https://github.com/Cloudbox/gitbook/tree/52490170d387c232b354a47724ac278ab2998d5c/Cloudbox-Backup-and-Restore/README.md#cloudbox-restore) instructions\).
 4. Install any extra, not-default containers you had installed previously \(step \#8 of the [Restore](https://github.com/Cloudbox/gitbook/tree/52490170d387c232b354a47724ac278ab2998d5c/Cloudbox-Backup-and-Restore/README.md#cloudbox-restore) instructions\).
-5. Check to see if your [Plex Autoscan URL](../install-cloudbox/09-application-setup/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) has changed and update [Sonarr](../install-cloudbox/09-application-setup/install-sonarr.md#plex-autoscan), [Radarr](../install-cloudbox/09-application-setup/install-radarr.md#plex-autoscan), and [Lidarr](../install-cloudbox/09-application-setup/install-lidarr.md#plex-autoscan), accordingly.
+5. Check to see if your [Plex Autoscan URL](../install-cloudbox/09-application-setup/media-server/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) has changed and update [Sonarr](../install-cloudbox/09-application-setup/media-pvrs/install-sonarr.md#plex-autoscan), [Radarr](../install-cloudbox/09-application-setup/media-pvrs/install-radarr.md#plex-autoscan), and [Lidarr](../install-cloudbox/09-application-setup/media-pvrs/install-lidarr.md#plex-autoscan), accordingly.
 
 ## Move Cloudbox to Another Server and Change the Domain Name
 
@@ -45,7 +45,7 @@ Listed below are some common scenarios and their migration instructions.
    * `/opt/sabnzbd/app/sabnzbd.ini` \(only if installed\)
 6. Install the [relevant Cloudbox type](../basics/basics-cloudbox-install-types.md) \(step \#7 of the [Restore](cloudbox-backup-and-restore.md#cloudbox-restore) instructions\).
 7. Install any extra, not-default containers you had installed previously \(step \#8 of the [Restore](cloudbox-backup-and-restore.md#cloudbox-restore) instructions\).
-8. Check to see if your [Plex Autoscan URL](../install-cloudbox/09-application-setup/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) has changed and update [Sonarr](../install-cloudbox/09-application-setup/install-sonarr.md#plex-autoscan), [Radarr](../install-cloudbox/09-application-setup/install-radarr.md#plex-autoscan), and [Lidarr](../install-cloudbox/09-application-setup/install-lidarr.md#plex-autoscan), accordingly
+8. Check to see if your [Plex Autoscan URL](../install-cloudbox/09-application-setup/media-server/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) has changed and update [Sonarr](../install-cloudbox/09-application-setup/media-pvrs/install-sonarr.md#plex-autoscan), [Radarr](../install-cloudbox/09-application-setup/media-pvrs/install-radarr.md#plex-autoscan), and [Lidarr](../install-cloudbox/09-application-setup/media-pvrs/install-lidarr.md#plex-autoscan), accordingly
 
    .
 
@@ -69,6 +69,6 @@ Listed below are some common scenarios and their migration instructions.
    * `/opt/sabnzbd/app/sabnzbd.ini` \(only if installed\)
 7. Install the [relevant Cloudbox type](../basics/basics-cloudbox-install-types.md) \(step \#7 of the [Restore](cloudbox-backup-and-restore.md#cloudbox-restore) instructions\).
 8. Install any extra, not-default containers you had installed previously \(step \#8 of the [Restore](cloudbox-backup-and-restore.md#cloudbox-restore) instructions\).
-9. Check to see if your [Plex Autoscan URL](../install-cloudbox/09-application-setup/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) has changed and update [Sonarr](../install-cloudbox/09-application-setup/install-sonarr.md#plex-autoscan), [Radarr](../install-cloudbox/09-application-setup/install-radarr.md#plex-autoscan), and [Lidarr](../install-cloudbox/09-application-setup/install-lidarr.md#plex-autoscan), accordingly.
+9. Check to see if your [Plex Autoscan URL](../install-cloudbox/09-application-setup/media-server/install-plex-autoscan.md#3-obtaining-the-plex-autoscan-url) has changed and update [Sonarr](../install-cloudbox/09-application-setup/media-pvrs/install-sonarr.md#plex-autoscan), [Radarr](../install-cloudbox/09-application-setup/media-pvrs/install-radarr.md#plex-autoscan), and [Lidarr](../install-cloudbox/09-application-setup/media-pvrs/install-lidarr.md#plex-autoscan), accordingly.
 10. Remove any files that contain your domain name in `/opt/nginx-proxy/vhost.d`. nginx will re-generate them automatically for your new domain. maually change the contents of any file in `/opt/nginx-proxy/conf.d` to point to your new domain. Not doing either of these steps will cause nginx to have issues restarting and will lead to "Page cannot be found" errors when attempting to browse to your services.
 

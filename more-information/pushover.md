@@ -124,7 +124,7 @@ To setup notifications, follow the steps below:
 Pushover can send you notifications whenever an event occurs with Plex \(e.g. someone starts watching something, new media is added, etc\)
 
 1. Create a Pushover application for "Tautulli" \(see Step 5 [here](pushover.md#pushover-setup)\).
-2. Enable notifications: [PlexPy](../install-cloudbox/09-application-setup/plexpy-tautulli-install-plexpy-tautulli.md) -&gt; Settings -&gt; Notification Agents -&gt; Click the gray "bell" icon next to "Pushover" -&gt; and select when you want to be alerted -&gt; Click "close". The "bell" icon will turn yellow.
+2. Enable notifications: [PlexPy](../install-cloudbox/09-application-setup/media-server/plexpy-tautulli-install-plexpy-tautulli.md) -&gt; Settings -&gt; Notification Agents -&gt; Click the gray "bell" icon next to "Pushover" -&gt; and select when you want to be alerted -&gt; Click "close". The "bell" icon will turn yellow.
 3. Add in your Pushover info: Click the "gear" icon next to "Pushover" -&gt; Type in your Pushover User Key and the Application Token \(you can click the "Test Notification" to check if it's working ok\) -&gt; Click "Save".
 
 ## Sonarr and Radarr
