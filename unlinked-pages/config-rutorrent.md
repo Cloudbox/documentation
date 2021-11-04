@@ -1,5 +1,0 @@
-# Config-ruTorrent.md
-
-* \[\[ruTorrent \(old paths\)\|Config: ruTorrent \(old paths\)\]\]
-* \[\[ruTorrent \(new paths\)\|Config: ruTorrent \(new paths\)\]\]
-
